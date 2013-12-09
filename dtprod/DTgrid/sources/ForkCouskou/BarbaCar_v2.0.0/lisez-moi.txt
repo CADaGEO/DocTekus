@@ -1,0 +1,49 @@
+Copyright 2012, CADaGEO - Guillaume BERSON
+Version 1.0.0 du 30/10/2012
+
+This file is part of BarbaCar.
+
+    BarbaCar is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    BarbaCar is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Foobar.  If not, see <http://www.gnu.org/licenses/>
+
+
+
+***Informations***
+
+Contact : contact@cadago.com, guillaume.berson@gmail.com
+
+
+
+***Version et mises à jour***
+
+Carroyage_v0.1 du 10/09/2012
+----------------------------
+Mise à disposition de la version 0.1
+
+
+Carroyage_v0.2 du 19/09/2012
+----------------------------
+- Prise en compte du carroyage à l'envers
+- Saisie utilisateur pour la distance entre deux croix
+- Passage du SCU en général après question utilisateur
+
+
+Carroyage_v0.2.1 du 30/09/2012
+----------------------------
+- Passage en SCU Général forcé
+- Ecart entre croix forcé (10cm quand inférieur à 1/1000, 5cm quand supérieur)
+
+
+BarbaCar_v1.0.0 du 30/10/2012
+----------------------------
+- Diffusion sous licence GNU

@@ -1,0 +1,27 @@
+		DTcloop - lisez-moi
+	
+####################
+### Description
+
+#Objectif
+DTcloop boucle des commandes AutoCAD unitaires (effectives sur une entité) sur plusieurs entités. 
+
+Pour l'instant DTcloop ne traite que la commande _MEASURE (MESURER) et ne tient pas compte du fichier ini pour les valeurs par défaut. 
+
+#UTILISATION
+_appload DTcloop.lsp
+dtcloop
+
+
+####################
+### Historique
+
+18/04/2013 - SBY
+- Création de la première version par GBE. 
+
+
+####################
+### Todo
+- Prise en compte de plusieurs commandes, comme par exemple DIVISER. 
+- Prise en compte du DTcloop.ini pour les valeurs par défaut. 
+

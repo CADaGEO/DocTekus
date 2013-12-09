@@ -1,0 +1,16 @@
+30/11/2013
+
+corrections dans DTgrid.lsp : 
+
+	* section commentaire "Utilisation occasionnelle" --> "DTgrid_v2.0.0" en "DTGrid"
+	* chargement de (ld-ut) ; sinon peut-être réfléchir à lancer "DTIni.lsp" comme loader de l'application ?
+	* calcul du chemin d'accés au fichier ini --> (findfile "DTgrid_v2.0.0.lsp") en (findfile "DTgrid.lsp")
+	* calcul du chemin d'accés au fichier ini --> utilisation de la fonction UtRep (ld-ut.lsp)
+	* calcul des angles de rotation & alignement TXT en reprenant la logique présente dans Barbacar de Guillaume
+
+
+suggestions :
+
+	- si un contour polyligne est déjà présent pour la saisie "3 points", envisager de le supprimer au
+	profit du contour dessiné par DTgrid (ou l'utiliser pour le contour adj ?)
+	- eh j'attend la suite avec impatience !! (flèche N., échelle, adj... etc) :)

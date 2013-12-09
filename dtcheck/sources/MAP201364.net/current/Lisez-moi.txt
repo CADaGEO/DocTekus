@@ -1,0 +1,25 @@
+- Utilisation du CSV ? SQLite ? Les deux ?
+- Eléments à lister :
+	- X,Y max et X,Y min
+	- Présentations
+	- Présentation active
+	- UCS
+	- Système de projection
+- GBE - Eléments à lister :
+	- Liste des blocs
+	- Nombre de chaque bloc
+	- Requêtes Map
+	- Dessins Associés Map
+	- XRefs
+	- Liste des calques
+	- Nombre d'objets total du dessin
+
+Iterate sur chaque Layout et récupérer les objets : http://forums.autodesk.com/t5/NET/Looping-through-each-layout-and-then-each-entity/td-p/2429650
+
+v0.0.1
+------
+Première version partagée sur le NAS, traite les présentation, les calques et les objets, uniquement en CSV
+
+v0.0.2
+------
+Ajout de l'écriture en SQLite
