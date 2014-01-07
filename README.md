@@ -15,6 +15,6 @@ Le plus simple pour débuter, le web chat officiel de Freenode
 http://webchat.freenode.net/
 
 
-<h3>Informations</h3>
+<h2>Informations</h2>
 DocTekus est composé de groupes d'outils. 
 DTgdb / DTprod / DTcheck / DTcorr / DTconv / DTpub / DTdesk
