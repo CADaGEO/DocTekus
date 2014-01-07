@@ -9,17 +9,12 @@ GROUPE DE DISCUSSION
 https://groups.google.com/forum/#!forum/doctekus
 
 CHAN IRC
-#doctekus sur irc.freenode.net
+Channel : #doctekus
+irc.freenode.net
 Le plus simple pour débuter, le web chat officiel de Freenode
 http://webchat.freenode.net/
-Channel : #doctekus
+
 
 <h3>Informations</h3>
 DocTekus est composé de groupes d'outils. 
-DTgdb
-DTprod
-DTcheck
-DTcorr
-DTconv
-DTpub
-DTdesk
+DTgdb / DTprod / DTcheck / DTcorr / DTconv / DTpub / DTdesk
