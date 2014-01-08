@@ -2,7 +2,7 @@
 DocTekus est un projet de toolbox dédié aux infrastructures réseau (prioritairement télécommunications). 
 
 Début 2013 : DocTekus est initié par CADaGEO (http://www.cadageo.com). <br>
-Début 2014 : Début de publication du code des premiers outils "en état de l'être" et premiers outils de communication. 
+Début 2014 : Début de publication du code des premiers outils "en état de l'être" et lancement des premiers outils de collaboration. 
  
 <h2>Contact</h2>
 <b>GROUPE DE DISCUSSION</b><br>
