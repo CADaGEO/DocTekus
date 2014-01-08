@@ -14,10 +14,10 @@ irc.freenode.net<br>
 Le plus simple pour débuter, le web chat officiel de Freenode<br>
 http://webchat.freenode.net/
 
-
 <h2>Informations</h2>
-DocTekus est composé de groupes d'outils. <br>
-DTgdb / DTprod / DTcheck / DTcorr / DTconv / DTpub / DTdesk
+DocTekus est composé de boîtes à outils. <br>
+DTgdb / DTmanage / DTprod / DTcheck / DTcorr / DTconv / DTpub / DTdesk <br>
+Ainsi que des librairies. 
 
 <h2>Documentation</h2>
 <b>Schéma de l'architecture des boîtes à outils</b><br>
