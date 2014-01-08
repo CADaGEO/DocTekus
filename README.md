@@ -19,3 +19,7 @@ http://webchat.freenode.net/
 DocTekus est composé de groupes d'outils. <br>
 DTgdb / DTprod / DTcheck / DTcorr / DTconv / DTpub / DTdesk
 
+<h2>Documentation</h2>
+<b>Schéma de l'architecture des boîtes à outils</b><br>
+https://github.com/crispil/DocTekus/blob/master/doc/DocTekus_archi_A3.pdf?raw=true
+
