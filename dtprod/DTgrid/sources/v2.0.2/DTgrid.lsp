@@ -1,5 +1,5 @@
 ;;Copyright 2012-2013, CADaGEO - Guillaume BERSON, Couskou, Cristel LEGRAND
-;;Version 2.0.3 du 31/12/2013
+;;Version 2.0.2 du 16/12/2013
 ;;
 ;;This file is part of Doctekus.
 ;;
@@ -39,9 +39,6 @@
 ;;
 ;;CHANGELOG **********************************************************
 ;;********************************************************************
-;;
-;;Version 2.0.3 du 31/12/2013
-;;- fix bug (insunitSdefsource et deftarget)
 ;;
 ;;Version 2.0.2 du 16/12/2013
 ;;- forcage des variables d'échelle d'insertion des blocs à 0 (insunits, insunitdefsource et deftarget)
@@ -192,7 +189,7 @@
 	
 	;; on créé la liste des variables modifiées et leur nouvelle valeur
 	(setq $Var (list (cons "cmdecho" 0) (cons "blipmode" 0) (cons "aunits" 3)  (cons "angbase" (/ pi 2)) (cons "angdir" 1) (cons "clayer" "0") (cons "TEXTSIZE" textsize_default) (cons "TEXTSTYLE" textstyle_default)
-						(cons "OSMODE" (getvar "OSMODE")) (cons "INSUNITS" 0) (cons "INSUNITSDEFSOURCE" 0) (cons "INSUNITSDEFTARGET" 0)))
+						(cons "OSMODE" (getvar "OSMODE")) (cons "INSUNITS" 0) (cons "INSUNITDEFSOURCE" 0) (cons "INSUNITDEFTARGET" 0)))
 
 	;; on sauvegarde l'état des variables AutoCAD
 	(UtSaveVar)
@@ -595,7 +592,7 @@
 
 ) ;Function
 
-(prompt  "\nDocTekus chargement DTgrid v2.0.3 - licence GNU GPL v3")
+(prompt  "\nDocTekus chargement DTgrid v2.0.2 - licence GNU GPL v3")
 (prompt "\n CADaGEO - DocTekus outil de carroyage chargé, taper DTGrid pour lancer la commande - licence GNU GPL v3")
 (princ)
 ;Clean chargement

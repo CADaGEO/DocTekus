@@ -1,5 +1,5 @@
 ;;Copyright 2012-2013, CADaGEO - Guillaume BERSON, Couskou, Cristel LEGRAND
-;;Version 2.0.3 du 31/12/2013
+;;Version 2.0.2 du 16/12/2013
 ;;
 ;;This file is part of Doctekus.
 ;;
@@ -35,9 +35,6 @@
 ;;
 ;;CHANGELOG **********************************************************
 ;;********************************************************************
-;;
-;;Version 2.0.3 du 31/12/2013
-;;- fix bug (insunitSdefsource et deftarget)
 ;;
 ;;Version 2.0.2 du 16/12/2013
 ;;- forcage des variables d'échelle d'insertion des blocs à 0 (insunits, insunitdefsource et deftarget)

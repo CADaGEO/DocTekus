@@ -1,4 +1,4 @@
-;;Copyright 2013, CADaGEO - Cristel LEGRAND
+;;Copyright 2013-2014, CADaGEO - Cristel LEGRAND
 ;;
 ;;This file is part of DocTekus.
 ;;
@@ -48,6 +48,7 @@
 ;;
 ;;TODO, pochaine version *********************************************
 ;;********************************************************************
+;; Voir issue GitHub
 ;; Revoir le respect des conventions de prog
 ;; Traitement des erreurs
 ;; fichier ini pour paramétrer ce qui est à nettoyer ou non / et le choix du fichier mapclean
@@ -106,7 +107,6 @@
 	(if NetMap (progn
 		(if (findfile NetPath)
 			(command "_-mapclean" NetPath)
-			(setq NetMap nil)
 		)
 	))
 	
@@ -137,6 +137,7 @@
 		(command "_audit" "_y")
 	))
 	
+	; Messages d'erreurs : à reprendre en s'inspirant de DRcorr2gis
 	(if NetMap (setq $DTLogUser (strcat $DTLogUser "\nDTclean : Nettoyage map ok, profil " NetPath)))
 	(if NetEl (setq $DTLogUser (strcat $DTLogUser "\nDTclean : Supression des élévations à faire à la mano pour l'instant...")))
 	(if NetApps (setq $DTLogUser (strcat $DTLogUser "\nDTclean : Purge des données d'applications")))
