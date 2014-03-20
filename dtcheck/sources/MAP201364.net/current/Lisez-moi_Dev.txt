@@ -23,3 +23,8 @@ Première version partagée sur le NAS, traite les présentation, les calques et le
 v0.0.2
 ------
 Ajout de l'écriture en SQLite
+
+
+PB pour le dev SQLite :
+
+Pour dev, il faut avoir installé System.Data.SQLite sur son poste (https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki), l'utiliser comme Référence dans Visual Studio, et avoir la variable "Copie Locale" sur True pour que la dll se copie dans le répertoire.
