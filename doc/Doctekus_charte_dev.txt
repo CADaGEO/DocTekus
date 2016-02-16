@@ -1,0 +1,133 @@
+
+VERSIONNING
+***********
+
+Il faut versionner tous nos codes, même les plus petits. Le principe courant :
+0 : version incomplète
+1 : première version complète
+2 : nouvelle version majeure.
+x.1 : évolution du code pour modification d'une fonction ou ajout fonctionnel potentiellement visible pour l'utilisateur.
+x.x.a : évolution du code pour correction de bug, de sécurité ou autre type d'évolution pas ou peu impactante pour l'utilisateur.
+1.0.a alpha1 : version alpha lorsque ça reste au niveau développeurs.
+1.0.a beta1 : version beta lorsque c'est en test chez des utilisateurs.
+
+
+GESTION DU DEPOT
+****************
+Le principe de classement des fichiers est décrit dans le fichier readme (paragraphe contenu)
+
+[plateforme] = environnement logiciel d'exécution, inclu le langage si nécessaire
+CAD2013accore = AutoCAD 2013, éxécution via accore console
+CADlsp = lisp autocad standard
+MAP201264.net = .net pour autocadMAP 2012 64 bits
+MAP201364.net = .net pour autocadMAP 2013 64 bits
+
+Packages :
+Pour l'instant on ne s'occupe pas de setups donc le mode de diffusion est l'archive.
+Les packages se nomment : [projet]_[version]_[plateforme].zip (ou .7z)
+
+	
+
+DOCUMENTATION
+*************
+
+	EN ENTETE DE CHAQUE FICHIER SOURCE, indiquer systématiquement :
+	- la licence (GNU GPL3 de préférence http://www.gnu.org/licenses/gpl.txt) et son copyright (noms et/ou organisations, demandé par la GNU GPL, cf. http://www.gnu.org/licenses/gpl-howto.html)
+	- dans le cas de la GNU GPL, la déclaration de permission de copie (voir exemple)
+	- le titre et le résumé en une ligne du contenu (liste des fonctions par exemple)
+	- la révision et sa date
+	- le détail des modifications effectuées à chaque révision
+	- les liens externes utilisés : librairies, applications ou autres / leurs licences respectives
+	
+	FICHIER LISEZ-MOI, pour une application :
+	- la licence (GNU GPL3 de préférence http://www.gnu.org/licenses/gpl.txt) et son copyright (noms et/ou organisations, demandé par la GNU GPL, cf. http://www.gnu.org/licenses/gpl-howto.html)
+	- dans le cas de la GNU GPL, la déclaration de permission de copie (voir exemple)
+	- le titre et le résumé en une ligne de la fonctionnalité
+	- la révision et sa date
+	- les information de contact de l'auteur
+	- les liens externes utilisés : librairies, applications ou autres / leurs licences respectives
+	- la notice d'installation
+	- la notice d'utilisation
+	- éventuellement, une todo liste pour les points restants à traiter identifiés
+	
+	Dans le cas d'un langage interprété (cas du lisp par exemple), le fichier lisez-moi peut être évité en ajoutant les informations complémentaires directement en entete du fichier source (voir exemple dtdraw).
+	
+	FICHIER DE LICENCE
+	- dans le cas de la GNU GPL, toute diffusion doit être accompagnée du texte complet de la licence (fichier COPYING.TXT - http://www.gnu.org/licenses/gpl.txt)
+	
+CONVENTIONS
+***********
+
+	BASES DE DONNES
+	- tables préfixées par T_
+	- vues préfixées par V_
+	- tables externes préfixées par VT_
+	- table de conf appelée T_CONF : champ clé / champ valeur
+	- après les premiers caractères qui distinguent le type d'objet, lettre R pour référentiel (par exemple la table des référencements) et T pour travail (par exemple extrait des référencements pour traitement)
+	- schémas des bases de données à faire via PgModeler
+	
+	SPATIALITE / SQLite
+	- toujours faire un pragma même si pas besoin
+	- Géométries : pgs=polygones / pls=polylignes / pts=points --> pgs01, pgs02
+	- Fichiers : edi=édtitable (dwg par exemple) / pub=publiable (plt, pdf...) / fil=file (fichiers d'objets) --> pub01 par ex. pour plt et pub02 pour pdf
+	
+	LISP
+	- Lorsque qu'une fonction est développée pour servir de fonction interne mais aussi de commande autocad, elle est écrite en tant que fonction nommée F_MaCommande, puis appelée dans la définition de la commande C:MaCommande
+	- dans toute commande C:MaCommande ne pas oublier l'équivalent commit / rollback pour pouvoir tout annuler d'un coup (voir exemple sur DTclean)
+	- Utilier les variables locales au maximum pour éviter les fuites de mémoire - préfixer les variables globales par $MaVariable / par défaut : 
+			$Var = liste des variables CAD pour utilisation dans Pgme
+			$Sav = liste des variables CAD sauvegardées avant Pgme
+			$DTLogUser = concaténation des messages à afficher à l'utilisateur en fin de pgme (ou à écrire dans log)
+	- afficher un message de bonne fin lors du chargement du lisp, en rappelant la licence utilisée et la version du programme (exemple 
+		(prompt  "\nDocTekus chargement DTgrid v2.0.0 - licence GNU GPL v3")
+		(prompt "\n CADaGEO - DocTekus outil de carroyage chargé, taper DTGrid pour lancer la commande - licence GNU GPL v3")			)
+	
+	AUTOCAD et le chargement des applicatifs
+	Pour l'instant le principe retenu est le suivant :
+	- le profil AutoCAD de l'utilisateur doit être paramétré de façon à avoir en chemin de recherche de fichiers de supports (et en chemins approuvés) les répertoires contenant les fichiers des applications utilisées (et leurs fichiers de paramétrage)
+	- la librairie lisp dtload permet de recenser et charger l'ensemble des outils AutoCAD disponibles (à compléter le cas échéant) - seules les applications accessibles dans les chemins de support sont effectivement chargées
+	- dtload est chargé au démarrage, via le fichier accadoc.lsp ou via la commande appload (valisette démarrage)
+	
+	.NET
+	Principes à décrire...
+	
+	
+EXEMPLE ENTETE FICHIER SOURCE
+##############################
+
+Copyright 2013, CADaGEO - Cristel LEGRAND
+
+This file is part of DocTekus.
+
+    DocTekus is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    DocTekus is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Foobar.  If not, see <http://www.gnu.org/licenses/>
+
+DESCRIPTION ********************************************************
+********************************************************************
+Description rapide du contenu du fichier : fonctions, commandes, objectifs...
+
+
+CHANGELOG **********************************************************
+********************************************************************
+Version 0.1b du 30/10/2013 :
+	- ajout d'une fonction de lecture de fichier ini
+
+Version 0.1a du 30/10/2013 :
+	- version initiale
+
+
+DEPENDANCES *******************************************************
+*******************************************************************
+applications exploitées : 7ZA (GNU LGPL) et OGR2OGR 1.9 minimum (X11/MIT)
+Execute recursivement DTconv_pcicom
+A executer dans un terminal compatible avec ogr2ogr (OSGeo4w par exemple)
