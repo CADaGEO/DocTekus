@@ -1,6 +1,7 @@
 # DocTekUs
 DocTekus est un projet de boîtes à outils dédiées à la gestion des bibliothèques de plans CAO/DAO.
 Il permet de développer et réunir des utilitaires et briques logicielles ouvertes, modulaires et paramétrables.
+
 Ces boîtes à outils ont pour but de faciliter :
 - la production de plans structurés, dans le respect de spécifications CAO/DAO imposées (dtprod)
 - le contrôle de la production (dtcheck)
@@ -9,7 +10,9 @@ Ces boîtes à outils ont pour but de faciliter :
 - la publication de la documentation et des données (dtpub)
 
 Début 2013 : DocTekus est initié par CADaGEO (http://www.cadageo.com).
+
 Début 2014 : Début de publication du code des premiers outils "en état de l'être" et lancement des premiers outils de collaboration. 
+
 Plusieurs contributeurs ont rejoints le projet en 2015 et 2016 (voir liste des contributeurs plus bas).
 
 ### Caractéristiques de la version actuelle
@@ -31,6 +34,7 @@ Une plateforme de gestion de projet [Redmine](http://redmine.cadageo.com/) desti
 
 ### Contributeurs
 Développement : ALENO - G BERSON - CADAGEO - JC MICHELIN - E PARIS - Techniques Topos
+
 Autres sponsors : COVAGE - SNCF
 
 Certaines parties de codes ont été recopiées ou inspirées de plusieurs auteurs de forums que nous remercions ici, sans pouvoir tous les citer : fabcad, bonuscad, MNT Reponse No 18...
