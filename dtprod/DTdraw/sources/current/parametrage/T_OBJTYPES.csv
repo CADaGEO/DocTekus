@@ -1,0 +1,335 @@
+INVCAD_DOCTYPE;INVCAD_SCALE;INVCAD_OBJCLASS;INVCAD_OBJTYPE;CADENTITYTYPE;CADLAYERS;CADCOLORS;CADLINETYPES;CADLGLOB;CADLINETHICKNESS;CADDIMSTYLES;CADDIMSCALE;CADTEXTSTYLES;CADTEXTSIZES;CADBLOCKS;CADSCALEBLOCK;CADMSG
+FH-FuniculaireHaut;1000;alt1;Acces;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_h_acces;1;
+FH-FuniculaireHaut;500;alt1;Acces;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_h_acces;0.5;
+FH-FuniculaireHaut;200;alt1;Acces;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_h_acces;0.2;
+FH-FuniculaireHaut;1000;alt2;Acces;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_h_acces;1;
+FH-FuniculaireHaut;500;alt2;Acces;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_h_acces;0.5;
+FH-FuniculaireHaut;200;alt2;Acces;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_h_acces;0.2;
+FH-FuniculaireHaut;1000;alt3;Acces;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_h_acces;1;
+FH-FuniculaireHaut;500;alt3;Acces;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_h_acces;0.5;
+FH-FuniculaireHaut;200;alt3;Acces;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_h_acces;0.2;
+FB-FuniculaireBas;1000;alt1;Acces;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_b_acces;1;
+FB-FuniculaireBas;500;alt1;Acces;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_b_acces;0.5;
+FB-FuniculaireBas;200;alt1;Acces;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_b_acces;0.2;
+FB-FuniculaireBas;1000;alt2;Acces;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_b_acces;1;
+FB-FuniculaireBas;500;alt2;Acces;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_b_acces;0.5;
+FB-FuniculaireBas;200;alt2;Acces;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_b_acces;0.2;
+FB-FuniculaireBas;1000;alt3;Acces;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_b_acces;1;
+FB-FuniculaireBas;500;alt3;Acces;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_b_acces;0.5;
+FB-FuniculaireBas;200;alt3;Acces;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_b_acces;0.2;
+Concessionnaires;*;Réseaux;AC-clim-chauffage;Polyline;A_RZO__CLIM;ByLayer;ByLayer;;;;;;;;;
+Reseau-Telecom;*;Poteau;BEton;BlockRef;P_TLFO_POINTS;ByLayer;ByLayer;;;;;;;po_beton;1;
+Reseau-Telecom;*;Poteau;BOis;BlockRef;P_TLFO_POINTS;ByLayer;ByLayer;;;;;;;po_bois;1;
+Reseau-Telecom;*;Regard;Carré;BlockRef;P_TLFO_POINTS;ByLayer;ByLayer;;;;;;;reg_carre;1;
+Grid;200;alt1;Carroyage;DTGrid;0;ByLayer;ByLayer;;;;;;;;;
+Grid;200;alt2;Carroyage;DTGrid;0;ByLayer;ByLayer;;;;;;;;;
+Grid;200;alt3;Carroyage;DTGrid;0;ByLayer;ByLayer;;;;;;;;;
+Grid;500;alt1;Carroyage;DTGrid;0;ByLayer;ByLayer;;;;;;;;;
+Grid;500;alt2;Carroyage;DTGrid;0;ByLayer;ByLayer;;;;;;;;;
+Grid;500;alt3;Carroyage;DTGrid;0;ByLayer;ByLayer;;;;;;;;;
+Grid;1000;alt1;Carroyage;DTGrid;0;ByLayer;ByLayer;;;;;;;;;
+Grid;1000;alt2;Carroyage;DTGrid;0;ByLayer;ByLayer;;;;;;;;;
+Grid;1000;alt3;Carroyage;DTGrid;0;ByLayer;ByLayer;;;;;;;;;
+Plan;*;EP-EspacePapier;Cartouche;CADBLOCKATT;P_CART_D;ByLayer;ByLayer;;;;;;;CART_PROJET_TEL;1;Copier les fichiers image des logos dans le répertoire courant
+FH-FuniculaireHaut;1000;alt1;CD-CableDroite;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_hd_cb;1;Choisir le nombre de tubes avec le paramètre de visibilité
+FH-FuniculaireHaut;500;alt1;CD-CableDroite;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_hd_cb;0.5;Choisir le nombre de tubes avec le paramètre de visibilité
+FH-FuniculaireHaut;200;alt1;CD-CableDroite;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_hd_cb;0.2;Choisir le nombre de tubes avec le paramètre de visibilité
+FH-FuniculaireHaut;1000;alt2;CD-CableDroite;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_hd_cb;1;Choisir le nombre de tubes avec le paramètre de visibilité
+FH-FuniculaireHaut;500;alt2;CD-CableDroite;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_hd_cb;0.5;Choisir le nombre de tubes avec le paramètre de visibilité
+FH-FuniculaireHaut;200;alt2;CD-CableDroite;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_hd_cb;0.2;Choisir le nombre de tubes avec le paramètre de visibilité
+FH-FuniculaireHaut;1000;alt3;CD-CableDroite;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_hd_cb;1;Choisir le nombre de tubes avec le paramètre de visibilité
+FH-FuniculaireHaut;500;alt3;CD-CableDroite;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_hd_cb;0.5;Choisir le nombre de tubes avec le paramètre de visibilité
+FH-FuniculaireHaut;200;alt3;CD-CableDroite;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_hd_cb;0.2;Choisir le nombre de tubes avec le paramètre de visibilité
+FB-FuniculaireBas;1000;alt1;CD-CableDroite;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_bd_cb;1;Choisir le nombre de tubes avec le paramètre de visibilité
+FB-FuniculaireBas;500;alt1;CD-CableDroite;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_bd_cb;0.5;Choisir le nombre de tubes avec le paramètre de visibilité
+FB-FuniculaireBas;200;alt1;CD-CableDroite;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_bd_cb;0.2;Choisir le nombre de tubes avec le paramètre de visibilité
+FB-FuniculaireBas;1000;alt2;CD-CableDroite;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_bd_cb;1;Choisir le nombre de tubes avec le paramètre de visibilité
+FB-FuniculaireBas;500;alt2;CD-CableDroite;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_bd_cb;0.5;Choisir le nombre de tubes avec le paramètre de visibilité
+FB-FuniculaireBas;200;alt2;CD-CableDroite;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_bd_cb;0.2;Choisir le nombre de tubes avec le paramètre de visibilité
+FB-FuniculaireBas;1000;alt3;CD-CableDroite;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_bd_cb;1;Choisir le nombre de tubes avec le paramètre de visibilité
+FB-FuniculaireBas;500;alt3;CD-CableDroite;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_bd_cb;0.5;Choisir le nombre de tubes avec le paramètre de visibilité
+FB-FuniculaireBas;200;alt3;CD-CableDroite;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_bd_cb;0.2;Choisir le nombre de tubes avec le paramètre de visibilité
+FH-FuniculaireHaut;1000;alt1;CG-CableGauche;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_hg_cb;1;Choisir le nombre de tubes avec le paramètre de visibilité
+FH-FuniculaireHaut;500;alt1;CG-CableGauche;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_hg_cb;0.5;Choisir le nombre de tubes avec le paramètre de visibilité
+FH-FuniculaireHaut;200;alt1;CG-CableGauche;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_hg_cb;0.2;Choisir le nombre de tubes avec le paramètre de visibilité
+FH-FuniculaireHaut;1000;alt2;CG-CableGauche;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_hg_cb;1;Choisir le nombre de tubes avec le paramètre de visibilité
+FH-FuniculaireHaut;500;alt2;CG-CableGauche;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_hg_cb;0.5;Choisir le nombre de tubes avec le paramètre de visibilité
+FH-FuniculaireHaut;200;alt2;CG-CableGauche;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_hg_cb;0.2;Choisir le nombre de tubes avec le paramètre de visibilité
+FH-FuniculaireHaut;1000;alt3;CG-CableGauche;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_hg_cb;1;Choisir le nombre de tubes avec le paramètre de visibilité
+FH-FuniculaireHaut;500;alt3;CG-CableGauche;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_hg_cb;0.5;Choisir le nombre de tubes avec le paramètre de visibilité
+FH-FuniculaireHaut;200;alt3;CG-CableGauche;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_hg_cb;0.2;Choisir le nombre de tubes avec le paramètre de visibilité
+FB-FuniculaireBas;1000;alt1;CG-CableGauche;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_bg_cb;1;Choisir le nombre de tubes avec le paramètre de visibilité
+FB-FuniculaireBas;500;alt1;CG-CableGauche;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_bg_cb;0.5;Choisir le nombre de tubes avec le paramètre de visibilité
+FB-FuniculaireBas;200;alt1;CG-CableGauche;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_bg_cb;0.2;Choisir le nombre de tubes avec le paramètre de visibilité
+FB-FuniculaireBas;1000;alt2;CG-CableGauche;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_bg_cb;1;Choisir le nombre de tubes avec le paramètre de visibilité
+FB-FuniculaireBas;500;alt2;CG-CableGauche;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_bg_cb;0.5;Choisir le nombre de tubes avec le paramètre de visibilité
+FB-FuniculaireBas;200;alt2;CG-CableGauche;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_bg_cb;0.2;Choisir le nombre de tubes avec le paramètre de visibilité
+FB-FuniculaireBas;1000;alt3;CG-CableGauche;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_bg_cb;1;Choisir le nombre de tubes avec le paramètre de visibilité
+FB-FuniculaireBas;500;alt3;CG-CableGauche;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_bg_cb;0.5;Choisir le nombre de tubes avec le paramètre de visibilité
+FB-FuniculaireBas;200;alt3;CG-CableGauche;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_bg_cb;0.2;Choisir le nombre de tubes avec le paramètre de visibilité
+FH-FuniculaireHaut;1000;alt1;CHeminement;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_h_cm;1;
+FH-FuniculaireHaut;500;alt1;CHeminement;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_h_cm;0.5;
+FH-FuniculaireHaut;200;alt1;CHeminement;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_h_cm;0.2;
+FH-FuniculaireHaut;1000;alt2;CHeminement;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_h_cm;1;
+FH-FuniculaireHaut;500;alt2;CHeminement;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_h_cm;0.5;
+FH-FuniculaireHaut;200;alt2;CHeminement;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_h_cm;0.2;
+FH-FuniculaireHaut;1000;alt3;CHeminement;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_h_cm;1;
+FH-FuniculaireHaut;500;alt3;CHeminement;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_h_cm;0.5;
+FH-FuniculaireHaut;200;alt3;CHeminement;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_h_cm;0.2;
+FB-FuniculaireBas;1000;alt1;CHeminement;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_b_cm;1;
+FB-FuniculaireBas;500;alt1;CHeminement;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_b_cm;0.5;
+FB-FuniculaireBas;200;alt1;CHeminement;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_b_cm;0.2;
+FB-FuniculaireBas;1000;alt2;CHeminement;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_b_cm;1;
+FB-FuniculaireBas;500;alt2;CHeminement;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_b_cm;0.5;
+FB-FuniculaireBas;200;alt2;CHeminement;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_b_cm;0.2;
+FB-FuniculaireBas;1000;alt3;CHeminement;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_b_cm;1;
+FB-FuniculaireBas;500;alt3;CHeminement;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_b_cm;0.5;
+FB-FuniculaireBas;200;alt3;CHeminement;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_b_cm;0.2;
+Concessionnaires;*;Réseaux;CHimie;Polyline;A_RZO__CHIMIQUE;ByLayer;ByLayer;;;;;;;;;
+Reseau-Telecom;*;Poteau;Composite;BlockRef;P_TLFO_POINTS;ByLayer;ByLayer;;;;;;;po_composite;1;
+Grid;*;Decoup;Contour-de-plan;Rectangle;P_CADR_DECOUP;ByLayer;ByLayer;;;;;;;;;
+FH-FuniculaireHaut;1000;alt1;COteRail;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_h_cot;1;
+FH-FuniculaireHaut;500;alt1;COteRail;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_h_cot;0.5;
+FH-FuniculaireHaut;200;alt1;COteRail;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_h_cot;0.2;
+FH-FuniculaireHaut;1000;alt2;COteRail;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_h_cot;1;
+FH-FuniculaireHaut;500;alt2;COteRail;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_h_cot;0.5;
+FH-FuniculaireHaut;200;alt2;COteRail;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_h_cot;0.2;
+FH-FuniculaireHaut;1000;alt3;COteRail;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_h_cot;1;
+FH-FuniculaireHaut;500;alt3;COteRail;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_h_cot;0.5;
+FH-FuniculaireHaut;200;alt3;COteRail;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_h_cot;0.2;
+FB-FuniculaireBas;1000;alt1;COteRail;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_b_cot;1;
+FB-FuniculaireBas;500;alt1;COteRail;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_b_cot;0.5;
+FB-FuniculaireBas;200;alt1;COteRail;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_b_cot;0.2;
+FB-FuniculaireBas;1000;alt2;COteRail;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_b_cot;1;
+FB-FuniculaireBas;500;alt2;COteRail;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_b_cot;0.5;
+FB-FuniculaireBas;200;alt2;COteRail;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_b_cot;0.2;
+FB-FuniculaireBas;1000;alt3;COteRail;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_b_cot;1;
+FB-FuniculaireBas;500;alt3;COteRail;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_b_cot;0.5;
+FB-FuniculaireBas;200;alt3;COteRail;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_b_cot;0.2;
+FH-FuniculaireHaut;1000;alt1;CR-CableRappel;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_h_rappelcb;1;
+FH-FuniculaireHaut;500;alt1;CR-CableRappel;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_h_rappelcb;0.5;
+FH-FuniculaireHaut;200;alt1;CR-CableRappel;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_h_rappelcb;0.2;
+FH-FuniculaireHaut;1000;alt2;CR-CableRappel;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_h_rappelcb;1;
+FH-FuniculaireHaut;500;alt2;CR-CableRappel;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_h_rappelcb;0.5;
+FH-FuniculaireHaut;200;alt2;CR-CableRappel;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_h_rappelcb;0.2;
+FH-FuniculaireHaut;1000;alt3;CR-CableRappel;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_h_rappelcb;1;
+FH-FuniculaireHaut;500;alt3;CR-CableRappel;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_h_rappelcb;0.5;
+FH-FuniculaireHaut;200;alt3;CR-CableRappel;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_h_rappelcb;0.2;
+FB-FuniculaireBas;1000;alt1;CR-CableRappel;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_b_rappelcb;1;
+FB-FuniculaireBas;500;alt1;CR-CableRappel;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_b_rappelcb;0.5;
+FB-FuniculaireBas;200;alt1;CR-CableRappel;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_b_rappelcb;0.2;
+FB-FuniculaireBas;1000;alt2;CR-CableRappel;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_b_rappelcb;1;
+FB-FuniculaireBas;500;alt2;CR-CableRappel;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_b_rappelcb;0.5;
+FB-FuniculaireBas;200;alt2;CR-CableRappel;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_b_rappelcb;0.2;
+FB-FuniculaireBas;1000;alt3;CR-CableRappel;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_b_rappelcb;1;
+FB-FuniculaireBas;500;alt3;CR-CableRappel;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_b_rappelcb;0.5;
+FB-FuniculaireBas;200;alt3;CR-CableRappel;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_b_rappelcb;0.2;
+Reseau-Telecom;*;Linéaire;CUivre;Polyline;P_TLCU_CHEMINEMENT;ByLayer;ByLayer;0.5;;;;;;;;
+FD-FuniculaireDivers;1000;alt1;D-fleche-droite;BlockRef;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;SensDroite;1;
+FD-FuniculaireDivers;500;alt1;D-fleche-droite;BlockRef;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;SensDroite;0.5;
+FD-FuniculaireDivers;200;alt1;D-fleche-droite;BlockRef;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;SensDroite;0.2;
+FD-FuniculaireDivers;1000;alt2;D-fleche-droite;BlockRef;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;SensDroite;1;
+FD-FuniculaireDivers;500;alt2;D-fleche-droite;BlockRef;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;SensDroite;0.5;
+FD-FuniculaireDivers;200;alt2;D-fleche-droite;BlockRef;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;SensDroite;0.2;
+FD-FuniculaireDivers;1000;alt3;D-fleche-droite;BlockRef;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;SensDroite;1;
+FD-FuniculaireDivers;500;alt3;D-fleche-droite;BlockRef;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;SensDroite;0.5;
+FD-FuniculaireDivers;200;alt3;D-fleche-droite;BlockRef;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;SensDroite;0.2;
+Concessionnaires;*;Réseaux;DW-eau-potable;Polyline;A_RZO__EAU_POTABLE;ByLayer;ByLayer;;;;;;;;;
+FH-FuniculaireHaut;1000;alt1;EBP;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_h_ebp;1;Choisir le type de jonction/dérivation avec le paramètre de visibilité
+FH-FuniculaireHaut;500;alt1;EBP;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_h_ebp;0.5;Choisir le type de jonction/dérivation avec le paramètre de visibilité
+FH-FuniculaireHaut;200;alt1;EBP;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_h_ebp;0.2;Choisir le type de jonction/dérivation avec le paramètre de visibilité
+FH-FuniculaireHaut;1000;alt2;EBP;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_h_ebp;1;Choisir le type de jonction/dérivation avec le paramètre de visibilité
+FH-FuniculaireHaut;500;alt2;EBP;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_h_ebp;0.5;Choisir le type de jonction/dérivation avec le paramètre de visibilité
+FH-FuniculaireHaut;200;alt2;EBP;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_h_ebp;0.2;Choisir le type de jonction/dérivation avec le paramètre de visibilité
+FH-FuniculaireHaut;1000;alt3;EBP;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_h_ebp;1;Choisir le type de jonction/dérivation avec le paramètre de visibilité
+FH-FuniculaireHaut;500;alt3;EBP;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_h_ebp;0.5;Choisir le type de jonction/dérivation avec le paramètre de visibilité
+FH-FuniculaireHaut;200;alt3;EBP;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_h_ebp;0.2;Choisir le type de jonction/dérivation avec le paramètre de visibilité
+FB-FuniculaireBas;1000;alt1;EBP;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_b_ebp;1;Choisir le type de jonction/dérivation avec le paramètre de visibilité
+FB-FuniculaireBas;500;alt1;EBP;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_b_ebp;0.5;Choisir le type de jonction/dérivation avec le paramètre de visibilité
+FB-FuniculaireBas;200;alt1;EBP;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_b_ebp;0.2;Choisir le type de jonction/dérivation avec le paramètre de visibilité
+FB-FuniculaireBas;1000;alt2;EBP;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_b_ebp;1;Choisir le type de jonction/dérivation avec le paramètre de visibilité
+FB-FuniculaireBas;500;alt2;EBP;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_b_ebp;0.5;Choisir le type de jonction/dérivation avec le paramètre de visibilité
+FB-FuniculaireBas;200;alt2;EBP;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_b_ebp;0.2;Choisir le type de jonction/dérivation avec le paramètre de visibilité
+FB-FuniculaireBas;1000;alt3;EBP;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_b_ebp;1;Choisir le type de jonction/dérivation avec le paramètre de visibilité
+FB-FuniculaireBas;500;alt3;EBP;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_b_ebp;0.5;Choisir le type de jonction/dérivation avec le paramètre de visibilité
+FB-FuniculaireBas;200;alt3;EBP;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_b_ebp;0.2;Choisir le type de jonction/dérivation avec le paramètre de visibilité
+Plan;*;EP-EspacePapier;Echelle;CADBLOCKATT;P_CART_D;ByLayer;ByLayer;;;;;;;Echelle;1;
+Concessionnaires;*;Réseaux;ELec;Polyline;A_RZO__ENERGIE;ByLayer;ByLayer;;;;;;;;;
+Concessionnaires;*;Réseaux;Gaz;Polyline;A_RZO__GAZ;ByLayer;ByLayer;;;;;;;;;
+FD-FuniculaireDivers;1000;alt1;G-fleche-gauche;BlockRef;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;SensGauche;1;
+FD-FuniculaireDivers;500;alt1;G-fleche-gauche;BlockRef;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;SensGauche;0.5;
+FD-FuniculaireDivers;200;alt1;G-fleche-gauche;BlockRef;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;SensGauche;0.2;
+FD-FuniculaireDivers;1000;alt2;G-fleche-gauche;BlockRef;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;SensGauche;1;
+FD-FuniculaireDivers;500;alt2;G-fleche-gauche;BlockRef;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;SensGauche;0.5;
+FD-FuniculaireDivers;200;alt2;G-fleche-gauche;BlockRef;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;SensGauche;0.2;
+FD-FuniculaireDivers;1000;alt3;G-fleche-gauche;BlockRef;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;SensGauche;1;
+FD-FuniculaireDivers;500;alt3;G-fleche-gauche;BlockRef;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;SensGauche;0.5;
+FD-FuniculaireDivers;200;alt3;G-fleche-gauche;BlockRef;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;SensGauche;0.2;
+Reseau-Telecom;*;Chambre;HN-HorsNormes;BlockRef;P_TLFO_POINTS;ByLayer;ByLayer;;;;;;;ch_HN;1;Ce bloc est à redimensionner selon la taille réelle de la chambre
+Reseau-Telecom;*;Linéaire;HorsProjetFO;Polyline;A_TLFO_CHEMINEMENT;ByLayer;ByLayer;0.2;;;;;;;;
+Reseau-Telecom;*;Chambre;HP-HorsProjet;Polyline;A_TLFO_POINTS;ByLayer;ByLayer;;;;;;;;;Vous êtes sur le bon calque. Il vous reste à insérer le bloc correspondant au point technique voulu (ctp_*, ch_* …) !
+Plan;*;EP-EspacePapier;Legende;CADBLOCKATT;P_CART_D;ByLayer;ByLayer;;;;;;;LEGENDE_PROJET_TEL;1;
+Reseau-Telecom;*;Poteau;Metal;BlockRef;P_TLFO_POINTS;ByLayer;ByLayer;;;;;;;po_metal;1;
+FH-FuniculaireHaut;1000;alt1;Mou;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_h_mou;1;
+FH-FuniculaireHaut;500;alt1;Mou;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_h_mou;0.5;
+FH-FuniculaireHaut;200;alt1;Mou;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_h_mou;0.2;
+FH-FuniculaireHaut;1000;alt2;Mou;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_h_mou;1;
+FH-FuniculaireHaut;500;alt2;Mou;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_h_mou;0.5;
+FH-FuniculaireHaut;200;alt2;Mou;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_h_mou;0.2;
+FH-FuniculaireHaut;1000;alt3;Mou;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_h_mou;1;
+FH-FuniculaireHaut;500;alt3;Mou;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_h_mou;0.5;
+FH-FuniculaireHaut;200;alt3;Mou;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_h_mou;0.2;
+FB-FuniculaireBas;1000;alt1;Mou;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_b_mou;1;
+FB-FuniculaireBas;500;alt1;Mou;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_b_mou;0.5;
+FB-FuniculaireBas;200;alt1;Mou;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_b_mou;0.2;
+FB-FuniculaireBas;1000;alt2;Mou;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_b_mou;1;
+FB-FuniculaireBas;500;alt2;Mou;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_b_mou;0.5;
+FB-FuniculaireBas;200;alt2;Mou;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_b_mou;0.2;
+FB-FuniculaireBas;1000;alt3;Mou;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_b_mou;1;
+FB-FuniculaireBas;500;alt3;Mou;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_b_mou;0.5;
+FB-FuniculaireBas;200;alt3;Mou;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_b_mou;0.2;
+Concessionnaires;*;Réseaux;O-autres;Polyline;A_RZO__AUTRE;ByLayer;ByLayer;;;;;;;;;
+FH-FuniculaireHaut;1000;alt1;Opcomp;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_h_opcomp;1;
+FH-FuniculaireHaut;500;alt1;Opcomp;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_h_opcomp;0.5;
+FH-FuniculaireHaut;200;alt1;Opcomp;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_h_opcomp;0.2;
+FH-FuniculaireHaut;1000;alt2;Opcomp;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_h_opcomp;1;
+FH-FuniculaireHaut;500;alt2;Opcomp;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_h_opcomp;0.5;
+FH-FuniculaireHaut;200;alt2;Opcomp;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_h_opcomp;0.2;
+FH-FuniculaireHaut;1000;alt3;Opcomp;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_h_opcomp;1;
+FH-FuniculaireHaut;500;alt3;Opcomp;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_h_opcomp;0.5;
+FH-FuniculaireHaut;200;alt3;Opcomp;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_h_opcomp;0.2;
+FB-FuniculaireBas;1000;alt1;Opcomp;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_b_opcomp;1;
+FB-FuniculaireBas;500;alt1;Opcomp;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_b_opcomp;0.5;
+FB-FuniculaireBas;200;alt1;Opcomp;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_b_opcomp;0.2;
+FB-FuniculaireBas;1000;alt2;Opcomp;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_b_opcomp;1;
+FB-FuniculaireBas;500;alt2;Opcomp;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_b_opcomp;0.5;
+FB-FuniculaireBas;200;alt2;Opcomp;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_b_opcomp;0.2;
+FB-FuniculaireBas;1000;alt3;Opcomp;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_b_opcomp;1;
+FB-FuniculaireBas;500;alt3;Opcomp;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_b_opcomp;0.5;
+FB-FuniculaireBas;200;alt3;Opcomp;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_b_opcomp;0.2;
+FD-FuniculaireDivers;1000;alt1;PHoto;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;Logophoto;1;
+FD-FuniculaireDivers;500;alt1;PHoto;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;Logophoto;0.5;
+FD-FuniculaireDivers;200;alt1;PHoto;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;Logophoto;0.2;
+FD-FuniculaireDivers;1000;alt2;PHoto;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;Logophoto;1;
+FD-FuniculaireDivers;500;alt2;PHoto;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;Logophoto;0.5;
+FD-FuniculaireDivers;200;alt2;PHoto;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;Logophoto;0.2;
+FD-FuniculaireDivers;1000;alt3;PHoto;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;Logophoto;1;
+FD-FuniculaireDivers;500;alt3;PHoto;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;Logophoto;0.5;
+FD-FuniculaireDivers;200;alt3;PHoto;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;Logophoto;0.2;
+FD-FuniculaireDivers;1000;alt1;POrtage;BlockRef;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;portage;1;
+FD-FuniculaireDivers;500;alt1;POrtage;BlockRef;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;portage;0.5;
+FD-FuniculaireDivers;200;alt1;POrtage;BlockRef;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;portage;0.2;
+FD-FuniculaireDivers;1000;alt2;POrtage;BlockRef;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;portage;1;
+FD-FuniculaireDivers;500;alt2;POrtage;BlockRef;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;portage;0.5;
+FD-FuniculaireDivers;200;alt2;POrtage;BlockRef;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;portage;0.2;
+FD-FuniculaireDivers;1000;alt3;POrtage;BlockRef;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;portage;1;
+FD-FuniculaireDivers;500;alt3;POrtage;BlockRef;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;portage;0.5;
+FD-FuniculaireDivers;200;alt3;POrtage;BlockRef;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;portage;0.2;
+Reseau-Telecom;*;Linéaire;ProjetFO;Polyline;P_TLFO_CHEMINEMENT;ByLayer;ByLayer;0.5;;;;;;;;
+FH-FuniculaireHaut;1000;alt1;Pterm;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_h_pterm;1;Choisir le type de point terminal avec le paramètre de visibilité
+FH-FuniculaireHaut;500;alt1;Pterm;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_h_pterm;0.5;Choisir le type de point terminal avec le paramètre de visibilité
+FH-FuniculaireHaut;200;alt1;Pterm;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_h_pterm;0.2;Choisir le type de point terminal avec le paramètre de visibilité
+FH-FuniculaireHaut;1000;alt2;Pterm;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_h_pterm;1;Choisir le type de point terminal avec le paramètre de visibilité
+FH-FuniculaireHaut;500;alt2;Pterm;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_h_pterm;0.5;Choisir le type de point terminal avec le paramètre de visibilité
+FH-FuniculaireHaut;200;alt2;Pterm;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_h_pterm;0.2;Choisir le type de point terminal avec le paramètre de visibilité
+FH-FuniculaireHaut;1000;alt3;Pterm;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_h_pterm;1;Choisir le type de point terminal avec le paramètre de visibilité
+FH-FuniculaireHaut;500;alt3;Pterm;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_h_pterm;0.5;Choisir le type de point terminal avec le paramètre de visibilité
+FH-FuniculaireHaut;200;alt3;Pterm;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_h_pterm;0.2;Choisir le type de point terminal avec le paramètre de visibilité
+FB-FuniculaireBas;1000;alt1;Pterm;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_b_pterm;1;Choisir le type de point terminal avec le paramètre de visibilité
+FB-FuniculaireBas;500;alt1;Pterm;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_b_pterm;0.5;Choisir le type de point terminal avec le paramètre de visibilité
+FB-FuniculaireBas;200;alt1;Pterm;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_b_pterm;0.2;Choisir le type de point terminal avec le paramètre de visibilité
+FB-FuniculaireBas;1000;alt2;Pterm;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_b_pterm;1;Choisir le type de point terminal avec le paramètre de visibilité
+FB-FuniculaireBas;500;alt2;Pterm;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_b_pterm;0.5;Choisir le type de point terminal avec le paramètre de visibilité
+FB-FuniculaireBas;200;alt2;Pterm;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_b_pterm;0.2;Choisir le type de point terminal avec le paramètre de visibilité
+FB-FuniculaireBas;1000;alt3;Pterm;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_b_pterm;1;Choisir le type de point terminal avec le paramètre de visibilité
+FB-FuniculaireBas;500;alt3;Pterm;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_b_pterm;0.5;Choisir le type de point terminal avec le paramètre de visibilité
+FB-FuniculaireBas;200;alt3;Pterm;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_b_pterm;0.2;Choisir le type de point terminal avec le paramètre de visibilité
+FH-FuniculaireHaut;1000;alt1;PT-PointTechnique;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_h_pt;1;
+FH-FuniculaireHaut;500;alt1;PT-PointTechnique;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_h_pt;0.5;
+FH-FuniculaireHaut;200;alt1;PT-PointTechnique;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_h_pt;0.2;
+FH-FuniculaireHaut;1000;alt2;PT-PointTechnique;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_h_pt;1;
+FH-FuniculaireHaut;500;alt2;PT-PointTechnique;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_h_pt;0.5;
+FH-FuniculaireHaut;200;alt2;PT-PointTechnique;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_h_pt;0.2;
+FH-FuniculaireHaut;1000;alt3;PT-PointTechnique;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_h_pt;1;
+FH-FuniculaireHaut;500;alt3;PT-PointTechnique;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_h_pt;0.5;
+FH-FuniculaireHaut;200;alt3;PT-PointTechnique;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_h_pt;0.2;
+FB-FuniculaireBas;1000;alt1;PT-PointTechnique;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_b_pt;1;
+FB-FuniculaireBas;500;alt1;PT-PointTechnique;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_b_pt;0.5;
+FB-FuniculaireBas;200;alt1;PT-PointTechnique;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_b_pt;0.2;
+FB-FuniculaireBas;1000;alt2;PT-PointTechnique;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_b_pt;1;
+FB-FuniculaireBas;500;alt2;PT-PointTechnique;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_b_pt;0.5;
+FB-FuniculaireBas;200;alt2;PT-PointTechnique;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_b_pt;0.2;
+FB-FuniculaireBas;1000;alt3;PT-PointTechnique;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_b_pt;1;
+FB-FuniculaireBas;500;alt3;PT-PointTechnique;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_b_pt;0.5;
+FB-FuniculaireBas;200;alt3;PT-PointTechnique;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_b_pt;0.2;
+FH-FuniculaireHaut;1000;alt1;Raccord;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_h_raccord;1;Choisir le type de raccord avec le paramètre de visibilité
+FH-FuniculaireHaut;500;alt1;Raccord;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_h_raccord;0.5;Choisir le type de raccord avec le paramètre de visibilité
+FH-FuniculaireHaut;200;alt1;Raccord;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_h_raccord;0.2;Choisir le type de raccord avec le paramètre de visibilité
+FH-FuniculaireHaut;1000;alt2;Raccord;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_h_raccord;1;Choisir le type de raccord avec le paramètre de visibilité
+FH-FuniculaireHaut;500;alt2;Raccord;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_h_raccord;0.5;Choisir le type de raccord avec le paramètre de visibilité
+FH-FuniculaireHaut;200;alt2;Raccord;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_h_raccord;0.2;Choisir le type de raccord avec le paramètre de visibilité
+FH-FuniculaireHaut;1000;alt3;Raccord;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_h_raccord;1;Choisir le type de raccord avec le paramètre de visibilité
+FH-FuniculaireHaut;500;alt3;Raccord;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_h_raccord;0.5;Choisir le type de raccord avec le paramètre de visibilité
+FH-FuniculaireHaut;200;alt3;Raccord;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_h_raccord;0.2;Choisir le type de raccord avec le paramètre de visibilité
+FB-FuniculaireBas;1000;alt1;Raccord;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_b_raccord;1;Choisir le type de raccord avec le paramètre de visibilité
+FB-FuniculaireBas;500;alt1;Raccord;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_b_raccord;0.5;Choisir le type de raccord avec le paramètre de visibilité
+FB-FuniculaireBas;200;alt1;Raccord;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_b_raccord;0.2;Choisir le type de raccord avec le paramètre de visibilité
+FB-FuniculaireBas;1000;alt2;Raccord;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_b_raccord;1;Choisir le type de raccord avec le paramètre de visibilité
+FB-FuniculaireBas;500;alt2;Raccord;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_b_raccord;0.5;Choisir le type de raccord avec le paramètre de visibilité
+FB-FuniculaireBas;200;alt2;Raccord;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_b_raccord;0.2;Choisir le type de raccord avec le paramètre de visibilité
+FB-FuniculaireBas;1000;alt3;Raccord;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_b_raccord;1;Choisir le type de raccord avec le paramètre de visibilité
+FB-FuniculaireBas;500;alt3;Raccord;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_b_raccord;0.5;Choisir le type de raccord avec le paramètre de visibilité
+FB-FuniculaireBas;200;alt3;Raccord;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_b_raccord;0.2;Choisir le type de raccord avec le paramètre de visibilité
+Grid;*;Decoup;Référence-de-plan;Text;P_CADR_DECOUP;ByLayer;ByLayer;;;;;ARIAL;50;;;
+Reseau-Telecom;*;Regard;Rond;BlockRef;P_TLFO_POINTS;ByLayer;ByLayer;;;;;;;reg_rond;1;
+Reseau-Telecom;*;Chambre;S1;BlockRef;P_TLFO_POINTS;ByLayer;ByLayer;;;;;;;ctp_S1;1;
+Reseau-Telecom;*;Chambre;S2;BlockRef;P_TLFO_POINTS;ByLayer;ByLayer;;;;;;;ctp_S2;1;
+Reseau-Telecom;*;Chambre;S3;BlockRef;P_TLFO_POINTS;ByLayer;ByLayer;;;;;;;ctp_S3;1;
+Reseau-Telecom;*;Chambre;S4;BlockRef;P_TLFO_POINTS;ByLayer;ByLayer;;;;;;;ctp_S4;1;
+Reseau-Telecom;*;Chambre;S5;BlockRef;P_TLFO_POINTS;ByLayer;ByLayer;;;;;;;ctp_S5;1;
+Reseau-Telecom;*;Chambre;S6;BlockRef;P_TLFO_POINTS;ByLayer;ByLayer;;;;;;;ctp_S6;1;
+Reseau-Telecom;*;Chambre;S6Bis;BlockRef;P_TLFO_POINTS;ByLayer;ByLayer;;;;;;;ctp_S6bis;1;
+Reseau-Telecom;*;Chambre;S7;BlockRef;P_TLFO_POINTS;ByLayer;ByLayer;;;;;;;ctp_S7;1;
+Concessionnaires;*;Réseaux;SA-assainissement;Polyline;A_RZO__ASSAINIS;ByLayer;ByLayer;;;;;;;;;
+Concessionnaires;*;Réseaux;SIgnalisation;Polyline;A_RZO__SIGNALISATION;ByLayer;ByLayer;;;;;;;;;
+Plan;*;EP-EspacePapier;TableauModifications;CADBLOCKATT;P_CART_D;ByLayer;ByLayer;;;;;;;MODIF;1;
+Concessionnaires;*;Réseaux;TL-télécoms;Polyline;A_RZO__TEL;ByLayer;ByLayer;;;;;;;;;
+FH-FuniculaireHaut;1000;alt1;TR-MiseALaTerre;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_h_miseterre;1;
+FH-FuniculaireHaut;500;alt1;TR-MiseALaTerre;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_h_miseterre;0.5;
+FH-FuniculaireHaut;200;alt1;TR-MiseALaTerre;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_h_miseterre;0.2;
+FH-FuniculaireHaut;1000;alt2;TR-MiseALaTerre;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_h_miseterre;1;
+FH-FuniculaireHaut;500;alt2;TR-MiseALaTerre;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_h_miseterre;0.5;
+FH-FuniculaireHaut;200;alt2;TR-MiseALaTerre;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_h_miseterre;0.2;
+FH-FuniculaireHaut;1000;alt3;TR-MiseALaTerre;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_h_miseterre;1;
+FH-FuniculaireHaut;500;alt3;TR-MiseALaTerre;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_h_miseterre;0.5;
+FH-FuniculaireHaut;200;alt3;TR-MiseALaTerre;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_h_miseterre;0.2;
+FB-FuniculaireBas;1000;alt1;TR-MiseALaTerre;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_b_miseterre;1;
+FB-FuniculaireBas;500;alt1;TR-MiseALaTerre;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_b_miseterre;0.5;
+FB-FuniculaireBas;200;alt1;TR-MiseALaTerre;CADBLOCKATT;P_TLFO_FUN1;ByLayer;ByLayer;;;;;;;fun_b_miseterre;0.2;
+FB-FuniculaireBas;1000;alt2;TR-MiseALaTerre;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_b_miseterre;1;
+FB-FuniculaireBas;500;alt2;TR-MiseALaTerre;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_b_miseterre;0.5;
+FB-FuniculaireBas;200;alt2;TR-MiseALaTerre;CADBLOCKATT;P_TLFO_FUN2;ByLayer;ByLayer;;;;;;;fun_b_miseterre;0.2;
+FB-FuniculaireBas;1000;alt3;TR-MiseALaTerre;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_b_miseterre;1;
+FB-FuniculaireBas;500;alt3;TR-MiseALaTerre;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_b_miseterre;0.5;
+FB-FuniculaireBas;200;alt3;TR-MiseALaTerre;CADBLOCKATT;P_TLFO_FUN3;ByLayer;ByLayer;;;;;;;fun_b_miseterre;0.2;
+Reseau-Telecom;*;Chambre;TU1;BlockRef;P_TLFO_POINTS;ByLayer;ByLayer;;;;;;;ch_TU1;1;
+Reseau-Telecom;*;Chambre;TU2;BlockRef;P_TLFO_POINTS;ByLayer;ByLayer;;;;;;;ch_TU2;1;
+Reseau-Telecom;*;Chambre;TU4;BlockRef;P_TLFO_POINTS;ByLayer;ByLayer;;;;;;;ch_TU4;1;
+Reseau-Telecom;*;Chambre;TU6;BlockRef;P_TLFO_POINTS;ByLayer;ByLayer;;;;;;;ch_TU6;1;
+Reseau-Telecom;*;Chambre;TU8;BlockRef;P_TLFO_POINTS;ByLayer;ByLayer;;;;;;;ch_TU8;1;
+Reseau-Telecom;*;Chambre;TU10;BlockRef;P_TLFO_POINTS;ByLayer;ByLayer;;;;;;;ch_TU10;1;
+Reseau-Telecom;1000;Telephone;Alarme;BlockRef;P_TLFO_POINTS;ByLayer;ByLayer;;;;;;;tel_al;1;
+Reseau-Telecom;1000;Telephone;AR-AlarmeRegulation;BlockRef;P_TLFO_POINTS;ByLayer;ByLayer;;;;;;;tel_al_reg;1;
+Reseau-Telecom;1000;Telephone;PN;BlockRef;P_TLFO_POINTS;ByLayer;ByLayer;;;;;;;tel_PN;1;
+Reseau-Telecom;1000;Telephone;PV;BlockRef;P_TLFO_POINTS;ByLayer;ByLayer;;;;;;;tel_PV;1;
+Reseau-Telecom;1000;Telephone;Regulation;BlockRef;P_TLFO_POINTS;ByLayer;ByLayer;;;;;;;tel_reg;1;
+Reseau-Telecom;500;Telephone;Alarme;BlockRef;P_TLFO_POINTS;ByLayer;ByLayer;;;;;;;tel_al;0.5;
+Reseau-Telecom;500;Telephone;AR-AlarmeRegulation;BlockRef;P_TLFO_POINTS;ByLayer;ByLayer;;;;;;;tel_al_reg;0.5;
+Reseau-Telecom;500;Telephone;PN;BlockRef;P_TLFO_POINTS;ByLayer;ByLayer;;;;;;;tel_PN;0.5;
+Reseau-Telecom;500;Telephone;PV;BlockRef;P_TLFO_POINTS;ByLayer;ByLayer;;;;;;;tel_PV;0.5;
+Reseau-Telecom;500;Telephone;Regulation;BlockRef;P_TLFO_POINTS;ByLayer;ByLayer;;;;;;;tel_reg;0.5;
+Reseau-Telecom;200;Telephone;Alarme;BlockRef;P_TLFO_POINTS;ByLayer;ByLayer;;;;;;;tel_al;0.2;
+Reseau-Telecom;200;Telephone;AR-AlarmeRegulation;BlockRef;P_TLFO_POINTS;ByLayer;ByLayer;;;;;;;tel_al_reg;0.2;
+Reseau-Telecom;200;Telephone;PN;BlockRef;P_TLFO_POINTS;ByLayer;ByLayer;;;;;;;tel_PN;0.2;
+Reseau-Telecom;200;Telephone;PV;BlockRef;P_TLFO_POINTS;ByLayer;ByLayer;;;;;;;tel_PV;0.2;
+Reseau-Telecom;200;Telephone;Regulation;BlockRef;P_TLFO_POINTS;ByLayer;ByLayer;;;;;;;tel_reg;0.2;

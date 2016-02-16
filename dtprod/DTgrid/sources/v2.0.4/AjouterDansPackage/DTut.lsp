@@ -26,11 +26,6 @@
 ;;
 ;;CHANGELOG **********************************************************
 ;;********************************************************************
-;;Version 0.0.6 du 30/12/2014
-;;- ajout fonction DTLsBlk
-;;
-;;Version 0.0.5 du 03/12/2014
-;;- ajout fonctions DTLsBlkUsed et DTgetpath
 ;;
 ;;Version 0.0.4 du 23/07/2014
 ;;- ajout fonction DTFieldPos et autres suite DTdraw
@@ -253,66 +248,6 @@
     )
   )
   
-;; DTLsBlkUsed -> monte une liste des noms de blocs présents et utilisés dans la base de donnée dessin (hors Xréfs)
-;;					Attention, ne tient pas compte des blocs imbriqués (non sélectionnés)
-(defun DTLsBlkUsed (/ e1 ne1 r1 l1)
-  (setq l1 '())
-  (setq e1 (entnext))
-  (while e1 ; le dessin n'est pas vide traitement des objets
-      (if (= (cdr (assoc 0 (entget e1))) "INSERT") (progn ; c'est un bloc ou Xréf
-	  
-		(setq ne1 (cdr (assoc 2 (entget e1)))) ; on récupère le nom du bloc (code 2)
-		(setq r1 (tblsearch "BLOCK" ne1 T)); On cherche la définition de ce bloc - l'option T permet de se positionner dans la table pour que ensuite tblnext fonctionne
-					
-		(if (not (assoc 1 r1)) (progn ; pas une référence externe : car pas de lien vers fichier externe (code 1)
-			;; CAS des blocs dynamiques à revoir : ne fonctionne pas pour l'instant (passer par l'API pour récupérer le vrai nom du bloc ???)
-			;; Voir exemple Jav.lsp dans Barbatatou
-			; (setq r1 (tblnext "BLOCK")); on récupère la "vrai" définition du bloc pour trouver son "vrai" nom
-			; (setq ne1 (cdr (assoc 2 r1)))
-			; (if (not (member ne1 l1)) (setq l1 (cons ne1 l1))) ; on ajoute le vrai nom du bloc à la liste s'il n'existe pas déjà
-			(if (not (member ne1 l1)) (setq l1 (cons ne1 l1))) ; on ajoute le nom du bloc à la liste s'il n'existe pas déjà
-		))
-	  ))
-	  (setq e1 (entnext e1)) ; passage à l'objet suivant
-  )
-  (DTReturn l1)
-)
-
-;; DTLsBlk -> monte une liste des noms de blocs définis dans la base de donnée dessin mais pas forcément utilisés (hors Xréfs)
-;,; morceau de code repris depuis Barbatatou WBLOCKM.lsp
-(defun DTLsBlk (/ lst itm nam pass ctr chk)
-
- (setq lst nil)
-      (setq itm (tblnext "BLOCK" T))
-      (while (/= itm nil)
-        (setq nam (cdr (assoc 2 itm)))
-        (setq pass T)
-        (if (/= (cdr (assoc 1 itm)) nil)
-          (setq pass nil)
-          (progn
-            (setq ctr 1)
-            (repeat (strlen nam)
-              (setq chk (substr nam ctr 1))
-              (if (or (= chk "*")(= chk "|"))
-                (setq pass nil)
-              )
-              (setq ctr (1+ ctr))
-            )
-          )
-        )
-        (if (= pass T)
-          (setq lst (cons nam lst))
-        )
-        (setq itm (tblnext "BLOCK"))
-      )
-      (setq lst (acad_strlsort lst))
-	  
-  (DTReturn lst)
-)
-
-
- 
-  
  
  ;;; Gestion des calques (gelés ou non / activés ou non)
   
@@ -438,31 +373,7 @@
 )
 
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Fichiers
-
-(defun DTgetpath (prefix chemin / lsrep rep lspath path)
-
-	(setq lsrep (UtSupEltListe "" (UtStr2lst chemin "\\") 0))
-	(setq lsprefix (UtSupEltListe "" (UtStr2lst prefix "\\") 0))
-	(setq lspath '() )
-	(if (= "." (substr (car lsrep) 1 1)) (progn ; il s'agit d'un chemin relatif
-		(setq lspath lsprefix)
-		(foreach rep lsrep
-			(cond 
-				((= rep ".") T); répertoire courant : on ne fait rien
-				((= rep "..") (setq lspath (UtSupNieme lspath (- (length lspath) 1)))); on remonte d'un cran
-				(T (setq lspath (UtAddNieme lspath 9999999 rep))) ; autres cas : on ajoute le nouveau répertoire
-			)
-		))
-	(setq lspath lsrep) ; il s'agit d'un chemin absolu
-	)
-	
-	(DTReturn (UtLst2Str lspath "\\"))
-)
-
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-   (prompt "\nDocTekus chargement DTut v0.0.6 - licence GNU GPL v3")
+   (prompt "\nDocTekus chargement DTut v0.0.3 - licence GNU GPL v3")
   (princ)

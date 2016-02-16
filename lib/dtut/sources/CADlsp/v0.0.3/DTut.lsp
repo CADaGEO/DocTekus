@@ -26,14 +26,6 @@
 ;;
 ;;CHANGELOG **********************************************************
 ;;********************************************************************
-;;Version 0.0.6 du 30/12/2014
-;;- ajout fonction DTLsBlk
-;;
-;;Version 0.0.5 du 03/12/2014
-;;- ajout fonctions DTLsBlkUsed et DTgetpath
-;;
-;;Version 0.0.4 du 23/07/2014
-;;- ajout fonction DTFieldPos et autres suite DTdraw
 ;;
 ;;Version 0.0.3 du 20/01/2014
 ;;- ajout fonction de recherche de validité d'un type d'entité DTTypEntitie
@@ -60,12 +52,6 @@
 
 (defun DTReturn (k) (setq k k))
 
-;;; Gestion d'erreurs améliorée (repris de UtDispError)
-(defun DTDispError (Msg)
-  (alert Msg)
-  (if (= (getvar "CMDACTIVE") 1) (command))
-  (exit)
-)
 
 ;; DTDrawLineO : créé les entités lignes dans le dessin (espace objet)
 (defun DTDrawLineO (DTpt1 DTpt2 Layer)
@@ -253,66 +239,6 @@
     )
   )
   
-;; DTLsBlkUsed -> monte une liste des noms de blocs présents et utilisés dans la base de donnée dessin (hors Xréfs)
-;;					Attention, ne tient pas compte des blocs imbriqués (non sélectionnés)
-(defun DTLsBlkUsed (/ e1 ne1 r1 l1)
-  (setq l1 '())
-  (setq e1 (entnext))
-  (while e1 ; le dessin n'est pas vide traitement des objets
-      (if (= (cdr (assoc 0 (entget e1))) "INSERT") (progn ; c'est un bloc ou Xréf
-	  
-		(setq ne1 (cdr (assoc 2 (entget e1)))) ; on récupère le nom du bloc (code 2)
-		(setq r1 (tblsearch "BLOCK" ne1 T)); On cherche la définition de ce bloc - l'option T permet de se positionner dans la table pour que ensuite tblnext fonctionne
-					
-		(if (not (assoc 1 r1)) (progn ; pas une référence externe : car pas de lien vers fichier externe (code 1)
-			;; CAS des blocs dynamiques à revoir : ne fonctionne pas pour l'instant (passer par l'API pour récupérer le vrai nom du bloc ???)
-			;; Voir exemple Jav.lsp dans Barbatatou
-			; (setq r1 (tblnext "BLOCK")); on récupère la "vrai" définition du bloc pour trouver son "vrai" nom
-			; (setq ne1 (cdr (assoc 2 r1)))
-			; (if (not (member ne1 l1)) (setq l1 (cons ne1 l1))) ; on ajoute le vrai nom du bloc à la liste s'il n'existe pas déjà
-			(if (not (member ne1 l1)) (setq l1 (cons ne1 l1))) ; on ajoute le nom du bloc à la liste s'il n'existe pas déjà
-		))
-	  ))
-	  (setq e1 (entnext e1)) ; passage à l'objet suivant
-  )
-  (DTReturn l1)
-)
-
-;; DTLsBlk -> monte une liste des noms de blocs définis dans la base de donnée dessin mais pas forcément utilisés (hors Xréfs)
-;,; morceau de code repris depuis Barbatatou WBLOCKM.lsp
-(defun DTLsBlk (/ lst itm nam pass ctr chk)
-
- (setq lst nil)
-      (setq itm (tblnext "BLOCK" T))
-      (while (/= itm nil)
-        (setq nam (cdr (assoc 2 itm)))
-        (setq pass T)
-        (if (/= (cdr (assoc 1 itm)) nil)
-          (setq pass nil)
-          (progn
-            (setq ctr 1)
-            (repeat (strlen nam)
-              (setq chk (substr nam ctr 1))
-              (if (or (= chk "*")(= chk "|"))
-                (setq pass nil)
-              )
-              (setq ctr (1+ ctr))
-            )
-          )
-        )
-        (if (= pass T)
-          (setq lst (cons nam lst))
-        )
-        (setq itm (tblnext "BLOCK"))
-      )
-      (setq lst (acad_strlsort lst))
-	  
-  (DTReturn lst)
-)
-
-
- 
-  
  
  ;;; Gestion des calques (gelés ou non / activés ou non)
   
@@ -370,99 +296,7 @@
 			; (DTReturn nil)
 		; )
 )
-
-	;--> DTCreaLay : Créée un calque avec ses propriétés ==> A POURSUIVRE
-; (defun DTCreaLay ( nom couleur typeligne epaisseur desc / objAcad objLay)
-
-	; ; Vérification des paramètres d'entrée
-	; (if (tblsearch "LAYER" nom) (UtDispError (strcat "DTCreaLay erreur calque déjà existant : " nom))); le nom du calque ne doit pas déjà exister
-	
-	; (if (or (> '-249 (atoi couleur)) (< 249 (atoi couleur))) (UtDispError (strcat "DTCreaLay erreur couleur calque non valide : calque " nom))) ; la couleur doit être soit un entier valide
-	
-	; (if (not (tblsearch "LTYPE" typeligne)) (UtDispError (strcat "DTCreaLay erreur type de ligne calque manquant : calque " nom))) ; le type de ligne doit déjà exister
-	; (if (and (/= "" epaisseur) (/= (type epaisseur) 'INT)) (UtDispError (strcat "DTCreaLay erreur epaisseur de ligne de calque non valide : calque " nom))) ; l'épaisseur est soit un chiffre, soit une châine vide si on prend celle par défaut --> revoir : valeurs d'énumération ? combien pour "par défaut" ?
-	; à revoir car la variable n'est pas forcément typée et fonction type nok, s'inspirer de la couleur
-	; ==> réponses trouvées :
-	;		épaisseur de ligne, variable CELWEIGHT pour celle courante / valeur entre -3 et 211, énumération car que certaines valeurs acceptées / -3 = par défaut / -2 = dubloc / -1 = ducalque / 
-	; 		 0, 5, 9, 13, 15, 18, 20, 25, 30, 35, 40, 50, 53, 60, 70, 80, 90, 100, 106, 120, 140, 158, 200 et 211
-	;		 voir contrôle de l'épaisseur dans DTdraw\DTdobj
-	; ; Création du calque
-	; (setq objAcad (vla-get-activedocument (vlax-get-acad-object)))
-	; (setq objLay (vla-add (vla-get-layers objAcad) nom))
-	
-	; ; Ajout de ses paramètres
-	; (vlax-put objLay 'TrueColor (vla-get-
-	; (vlax-put objLay 'Linetype typeligne)
-	; --> pb de cette méthode = comprendre l'articulation de chaque propriété
-	
-	
-	; (entmake
-		; (list
-			; (cons 0  "LAYER")
-			; (cons 100 "AcDbSymbolTableRecord")
-			; (cons 100 "AcDbLayerTableRecord")
-			; (cons 2 nom)
-			; ;(cons 70 0) ; affiché ou non, gelé ou non : facultatif ? sinon on prend une valeur par défaut
-			; (cons 62 (atoi couleur)) ; atoi pour convertir en entier -> pas de valeurs ByLayer ou ByBlock possibles
-			; (if (/= "" epaisseur) (cons 370 epaisseur)) ; à revoir : convertir en réel atof ? ou utiliser les valeurs d'énumération, type par défaut
-			; (cons 6 typeligne)                                            
-		; )
-	; ); pb de la description que l'on ne sait pas ajouter
-	
-	; ; ajout de la description avec activeX
-	; --> pb de cette méthode = pas d'accès à la description du calque
-	
-	; Autre méthode possible = celle de Pierre dans ld-ldd : passer par la commande clavier CAD
-	
-	
-	; )
-
-
-  ;--> DTFieldPos : Recherche la Position du Champs dans une Liste de Champs
-	;;		exemple : (DTFieldPos ("A" "B" "C") "B")) retourne 1
-	;; repris et adapté de UtFiedPos
-
-(defun DTFieldPos (ListeFields Field / l1 i OneField bNotFound)
-
-  (setq l1 (length ListeFields))
-  (setq i 0)
-  (setq bNotFound 1)
-  (while (and (< i l1) bNotFound)
-    (setq OneField (nth i ListeFields))
-    (if	(= OneField Field)
-      (setq bNotFound Nil)
-      (setq i (1+ i))
-    )
-  )
-  (DTReturn i)
-)
-
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Fichiers
-
-(defun DTgetpath (prefix chemin / lsrep rep lspath path)
-
-	(setq lsrep (UtSupEltListe "" (UtStr2lst chemin "\\") 0))
-	(setq lsprefix (UtSupEltListe "" (UtStr2lst prefix "\\") 0))
-	(setq lspath '() )
-	(if (= "." (substr (car lsrep) 1 1)) (progn ; il s'agit d'un chemin relatif
-		(setq lspath lsprefix)
-		(foreach rep lsrep
-			(cond 
-				((= rep ".") T); répertoire courant : on ne fait rien
-				((= rep "..") (setq lspath (UtSupNieme lspath (- (length lspath) 1)))); on remonte d'un cran
-				(T (setq lspath (UtAddNieme lspath 9999999 rep))) ; autres cas : on ajoute le nouveau répertoire
-			)
-		))
-	(setq lspath lsrep) ; il s'agit d'un chemin absolu
-	)
-	
-	(DTReturn (UtLst2Str lspath "\\"))
-)
-
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-   (prompt "\nDocTekus chargement DTut v0.0.6 - licence GNU GPL v3")
+   (prompt "\nDocTekus chargement DTut v0.0.3 - licence GNU GPL v3")
   (princ)

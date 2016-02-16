@@ -1,0 +1,11 @@
+INVCAD_DOCTYPE;CAD_GABARIT;##
+##;Nom du fichier gabarit AutoCAD;Utilisation
+##;Gabaritlgt;Gabarit « EPURE » fourni par LVE pour les plans des voies
+##;rapnouv;gabarit par défaut (commande rapnouv)
+Concessionnaires;RRR-ExtraitNomCable-STA-TEL-NN-PRJ;Gabarit pour création du fichier du réseau télécoms
+Grid;RRR-ExtraitNomCable-STA-TEL-NN-PRJ;Gabarit pour création du fichier du réseau télécoms
+Reseau-Telecom;RRR-ExtraitNomCable-STA-TEL-NN-PRJ;Gabarit pour création du fichier du réseau télécoms
+FH-FuniculaireHaut;RRR-ExtraitNomCable-STA-TEL-NN-PRJ;Gabarit pour création du fichier du réseau télécoms
+FB-FuniculaireBas;RRR-ExtraitNomCable-STA-TEL-NN-PRJ;Gabarit pour création du fichier du réseau télécoms
+FD-FuniculaireDivers;RRR-ExtraitNomCable-STA-TEL-NN-PRJ;Gabarit pour création du fichier du réseau télécoms
+Plan;RRR-ExtraitNomCable-STA-TYP-N1-N2-VII;Gabarit pour création du fichier des plans télécoms

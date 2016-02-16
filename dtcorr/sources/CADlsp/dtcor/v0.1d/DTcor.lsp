@@ -346,7 +346,7 @@
 		)
 	)
 	(setvar "ATTREQ" attreq)
-	(princ)
+	(DTReturn $DTLogUser)
 )
 
 ; F_DTattval : modification de la valeur des attributs de blocs

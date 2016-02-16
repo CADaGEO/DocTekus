@@ -1,0 +1,215 @@
+CADATT_ENUM;CADBLOCK_ATTVAL;INVCAD_CADBLOCKATTVAL
+l_r2_code;AMx;AMx
+l_r2_code;BDx;BDx
+l_r2_code;CFx;CFx
+l_r2_code;CHx;CHx
+l_r2_code;DJx;DJx
+l_r2_code;LLx;LLx
+l_r2_code;LMx;LMx
+l_r2_code;LYx;LYx
+l_r2_code;MNx;MNx
+l_r2_code;MPx;MPx
+l_r2_code;MRx;MRx
+l_r2_code;NTx;NTx
+l_r2_code;PEx;PEx
+l_r2_code;PNx;PNx
+l_r2_code;PSE;PSE
+l_r2_code;PSL;PSL
+l_r2_code;PRG;PRG
+l_r2_code;RNx;RNx
+l_r2_code;ROx;ROx
+l_r2_code;RSx;RSx
+l_r2_code;STx;STx
+l_r2_code;TLx;TLx
+l_r2_code;TRx;TRx
+l_r2_desc;Région d'Amiens;AMx
+l_r2_desc;Région de Bordeaux;BDx
+l_r2_desc;Région de Clermont-Ferrand;CFx
+l_r2_desc;Région de Chambéry;CHx
+l_r2_desc;Région de Dijon;DJx
+l_r2_desc;Région de Lille;LLx
+l_r2_desc;Région de Limoges;LMx
+l_r2_desc;Région de Lyon;LYx
+l_r2_desc;Région de Metz-Nancy;MNx
+l_r2_desc;Région de Montpellier;MPx
+l_r2_desc;Région de Marseille;MRx
+l_r2_desc;Région de Nantes;NTx
+l_r2_desc;Région de Paris - Est;PEx
+l_r2_desc;Région de Paris - Nord;PNx
+l_r2_desc;Région de Paris - Sud Est ;PSE
+l_r2_desc;Région de Paris - Saint-Lazare;PSL
+l_r2_desc;Région de Paris - Rive Gauche;PRG
+l_r2_desc;Région de Rennes;RNx
+l_r2_desc;Région de Rouen;ROx
+l_r2_desc;Région de Reims;RSx
+l_r2_desc;Région de Strasbourg;STx
+l_r2_desc;Région de Toulouse;TLx
+l_r2_desc;Région de Tours;TRx
+l_statut;DIx;DIx
+l_statut;AVP;AVP
+l_statut;PRO;PRO
+l_statut;APO;APO
+l_statut;REA;REA
+l_statut;REC;REC
+l_statut;MEX;MEX
+l_statut_desc;Dossier d'Initialisation;DIx
+l_statut_desc;Avant-Projet;AVP
+l_statut_desc;Projet;PRO
+l_statut_desc;Avant-Projet et Projet;APO
+l_statut_desc;Dossier de réalisation;REA
+l_statut_desc;Récolement;REC
+l_statut_desc;Maintenance et exploitation;MEX
+l_doc_type;PDV;PDV
+l_doc_type;TEL;TEL
+l_doc_type;PDP;PDP
+l_doc_type;CEM;CEM
+l_doc_type;SGE;SGE
+l_doc_type;;
+l_doc_type;;
+l_doc_type;;
+l_proj;27561;27561
+l_proj;27562;27562
+l_proj;27563;27563
+l_proj;27564;27564
+l_proj;27572;27572
+l_proj;3942;3942
+l_proj;3943;3943
+l_proj;3944;3944
+l_proj;3945;3945
+l_proj;3946;3946
+l_proj;3947;3947
+l_proj;3948;3948
+l_proj;3949;3949
+l_proj;3950;3950
+l_proj;2154;2154
+l_proj_desc;NTF Lambert I zone Nord;27561
+l_proj_desc;NTF Lambert II zone Centre;27562
+l_proj_desc;NTF Lambert III zone Sud;27563
+l_proj_desc;NTF Lambert IV zone Corse;27564
+l_proj_desc;NTF Lambert II étendu;27572
+l_proj_desc;RGF93 - Lambert CC42 zone 1 (Corse) ;3942
+l_proj_desc;RGF93 - Lambert CC43 zone 2 (Sud) ;3943
+l_proj_desc;RGF93 - Lambert CC44 zone 3 (Sud) ;3944
+l_proj_desc;RGF93 - Lambert CC45 zone 4 (Sud/Centre) ;3945
+l_proj_desc;RGF93 - Lambert CC46 zone 5 (Centre);3946
+l_proj_desc;RGF93 - Lambert CC47 zone 6 (Centre) ;3947
+l_proj_desc;RGF93 - Lambert CC48 zone 7 (Centre/Nord) ;3948
+l_proj_desc;RGF93 - Lambert CC49 zone 8 (Nord) ;3949
+l_proj_desc;RGF93 - Lambert CC50 zone 9 (Nord) ;3950
+l_proj_desc;RGF93 -  Lambert 93 ;2154
+l_cb_action;existant;Existant
+l_cb_action;à poser;AP-à-poser
+l_cb_action;posé;Posé
+l_cb_action;à déposer;AD-à-déposer
+zapper;déposé;Déposé
+l_pt_mate;Béton;Béton
+l_pt_mate;Composite;Composite
+l_pt_mate;Parpaing;Parpaing
+l_pt_mate;Bois;Bois
+l_pt_mate;Métal;Métal
+zapper;PVC pour les coffrets si coffrets ?;
+l_pt_tp_mate;Acier;Acier
+l_pt_tp_mate;Béton;Béton
+l_pt_tp_mate;Comp.;Composite
+l_pt_tp_mate;Fonte;Fonte
+l_cm_contexte;Galerie technique;Galerie-technique
+l_cm_contexte;Hors emprise;Hors-emprise
+l_cm_contexte;Intérieur;Intérieur
+l_cm_contexte;PRa;PRa
+l_cm_contexte;PRo;PRo
+l_cm_contexte;Traversée CV;TCV-TraverséeCheminV
+l_cm_contexte;Traversée R;TR-TraverséeRoute
+l_cm_contexte;Traversée V;TV-TraverséeVoie
+l_cm_contexte;Tranchée ouverte;TO-TranchéeOuverte
+l_cm_contexte;Tunnel;TUnnel
+zapper;Tranchée ferroviaire ?;
+zapper;Traversée chemin planchéié ?;
+zapper;ERP ?;
+zapper;Besoins d'autres contextes à remonter dans Netgéo ?;
+l_cm_modele;CBPM;CBPM
+l_cm_modele;CBMM;CBMM
+l_cm_modele;CBMM2;CBMM2
+l_cm_modele;CBGM;CBGM
+l_cm_modele;CBGM2;CBGM2
+l_cm_modele;CBGM3;CBGM3
+l_cm_modele;CBTGM;CBTGM
+l_cm_modele;CBTGM2;CBTGM2
+l_cm_modele;CBTGM3;CBTGM3
+l_cm_modele;CBINT;CBINT
+l_cm_modele;CBCINT;CBCINT
+l_cm_modele;CBRER;CBRER
+l_cm_modele;CBRATP;CBRATP
+l_cm_modele;CBPiste larg.;CBPiste
+l_cm_modele;CB larg.;CB
+l_cm_modele;CC larg.;CC
+l_cm_modele;CCMM;CCMM
+l_cm_modele;CCGM;CCGM
+l_cm_modele;C Amiante;C-Amiante
+l_cm_modele;CdC M largxht.;CdC-Metallique
+l_cm_modele;CdC C largxht.;CdC-Composite
+l_cm_modele;CdC P largxht.;CdC-PVC
+l_cm_modele;Crochets;Crochets
+l_cm_modele;FG;FG
+l_cm_modele;FG A;FG-A
+l_cm_modele;FG B;FG-B
+l_cm_modele;F LGV;F-LGV
+l_cm_modele;TPC%%c;TPCiment
+l_cm_modele;TPB%%c;TPBeton
+l_cm_modele;TP%%c;TP
+l_pt_modele;CTP S1;S1
+l_pt_modele;CTP S2;S2
+l_pt_modele;CTP S3;S3
+l_pt_modele;CTP S4;S4
+l_pt_modele;CTP S5;S5
+l_pt_modele;CTP S6;S6
+l_pt_modele;CTP S6bis;S6bis
+l_pt_modele;CTP S7;S7
+l_pt_modele;Ch TU1;TU1
+l_pt_modele;Ch TU2;TU2
+l_pt_modele;Ch TU4;TU4
+l_pt_modele;Ch TU6;TU6
+l_pt_modele;Ch TU8;TU8
+l_pt_modele;Ch TU10;TU10
+l_pt_modele;Ch HN;HN
+l_pt_modele;Regard rond;RegardRond
+l_pt_modele;Regard carré;RegardCarré
+l_pt_modele;Poteau béton;PBE-PoteauBEton
+l_pt_modele;Poteau bois;PBO-PoteauBOis
+l_pt_modele;Poteau composite;PC-PoteauComposite
+l_pt_modele;Poteau métal;PM-PoteauMétal
+zapper;Baie Outdoor / Shelter;=> non ce n'est pas un ponctuel
+zapper;Coffret;=> non le coffret est en fait le type de BPE ? À voir Fred si il a besoin des poteaux (on garde) ou non (on indique les coffrets dont il a besoin)
+l_pt_tp_clas;B125;B125
+l_pt_tp_clas;A15;A15
+l_pt_tp_clas;C250;C250
+zapper;Autres;
+l_pt_verrou;Verrou;Verrouillé
+l_pt_verrou;;NonVerrouillé
+l_bp_typjd;Jonction droite;
+l_bp_typjd;Jonction en épi;
+l_bp_typjd;Jonction droite avec dérivation;
+l_bp_typjd;Jonction en épi avec dérivation;
+l_bp_typjd;Dérivation;
+l_tm_type;TCOp;TCOP
+l_tm_type;CDOp;CDOP
+l_tm_type;FT;FT
+l_tm_type;PN;PN
+l_tm_type;PV;PV
+l_tm_type;IOEP;IOEP
+l_tm_type;IOEP Passive;IOEP Passive
+l_tm_type;IOES PN;IOES PN
+l_tm_type;IOES PV;IOES PV
+l_tm_type;IOES Circuit d'Alarme;IOES Alarme
+l_tm_type;IOES Circuit de Régulation;IOES Régulation
+l_tm_type;IOES Circuit d'Alarme et de Régulation;IOES Alarme et Régulation
+l_cb_prop;SNCF R;SNCF-Reseau
+l_cb_prop;SFR;SFR
+l_cb_prop;BOUYGUES;BOUYGUES
+l_cb_prop;ORANGE;ORANGE
+l_cb_typfonc;PRINCIPAL;Principal
+l_cb_typfonc;DE DERIVATION;Dérivation
+l_cb_struct;armé;Armé
+l_cb_struct;armé ISH;ISH-ArméISH
+l_cb_struct;diélectrique;Diélectrique
+l_cd_type;PEHD;PEHD
+l_cd_type;microtube;Microtube

@@ -22,18 +22,10 @@
 ;;	- DTcorxpath (supression des chemin enregistrés dans les XRéfs)
 ;;	- DTcoripath (supression des chemin enregistrés dans les IRéfs)
 ;;	- DTcoriref (suppression des images et PDF en références externes)
-;;	- DTblkmaj (mise à jour des blocs par rechargements)
 ;; Utilise une fonction utilitaire ld-ut.lsp sous licence GPL GNU
 ;;
 ;;CHANGELOG **********************************************************
 ;;********************************************************************
-;;Version 0.1d du 05/12/2014
-;; - ajout de la fonction F_DTattval (mise à jour des attributs de blocs) ==> abandonné, existe déjà dans Barbatatou (ch_attribut)
-;; - correction F_DTupblk : pour utilisation à l'intérieur d'un script / pour ajout commande ATTSYNC / pour tenir compte des blocs imbriqués
-;;
-;;Version 0.1c du 03/12/2014 :
-;;  - ajout de la fonction DTupblk (rechargement des blocs)
-;;
 ;;Version 0.1b du 04/11/2013 :
 ;;	- Changement de nom du fichier lsp : DTclean devient DTcor
 ;;	- prise en compte des images attachées
@@ -53,25 +45,21 @@
 ;;*******************************************************************
 ;; Utilise une fonction utilitaire ld-ut.lsp sous licence GPL GNU
 ;; Utilise la variable globale $DTLogUser
-;; Utilise les fonctions vl
 ;;
 ;;TODO, pochaine version *********************************************
 ;;********************************************************************
 ;; Voir issue GitHub
-;; Revoir le respect des conventions de prog DocTekus
+;; Revoir le respect des conventions de prog
 ;; Traitement des erreurs
 ;; fichier ini pour paramétrer ce qui est à nettoyer ou non / et le choix du fichier mapclean
 ;; supression des élévation, au moins pour les pricnipaux objets
 ;; Reprendre le code LDCheck pour le contrôle du calque 0 --> beaucoup plus fiable
 ;; avant le démarrage, se mettre en style de texte standard, style de côtes standard et styles de tableaux
-;; ajout des blocs dynamiques à DTupblk / étendre aux blocs inutilisés (notamment à cause des blocs imbriqués qui ici ne sont pas rechargés) et ajouter ATTSYNC QUE si voulu par user
 ;*********************************************************************
 ;*********************************************************************
 
 ;chargement d'utilitaires utilisés dans ce code
  (if (findfile "ld-ut.lsp") (load "ld-ut.lsp") (prompt "\nErreur ld-ut.lsp non trouvé"))
- (if (findfile "DTut.lsp") (load "DTut.lsp") (prompt "\nErreur DTut.lsp non trouvé"))
- (vl-load-com)
  
  ; DTclean : nettoyage général
  ;********************************************************************
@@ -106,7 +94,6 @@
 	(setq NetPurg T) ; Purge complète ?
 	(setq NetAudt nil) ; Audit avec correction des erreurs ?
 	(setq NetZero T); Vérification du calque 0 ?
-	(setq NetBlk nil); Rechargement des blocs ? => à compléter, ne fonctionne pas en l'état
 		
 	;Passer le calque 0 en calque courant
 	(setvar "CLAYER" "0")
@@ -165,11 +152,6 @@
 		(if (> nb0 0) (setq $DTLogUser (strcat $DTLogUser "\nDTClean : ATTENTION " (itoa nb0) " entités présentes sur le calque 0")))
 	))
 	
-	; Rechargement des blocs => à compléter, ne fonctionne pas en l'état
-	(if NetBlk (progn
-		(F_DTupblk)
-	))
-	
 )
 
 ; DTcorxpath : supression des chemins enregistrés dans les XRéfs
@@ -198,8 +180,6 @@
 	;
 	; pour trouver les références externes et changer les chemins : prendre toutes les entités de la table des blocs, 
 	; rechercher celles qui ont un code 1 (les xrefs) et modifier le chemin stocké
-	   
-	(if (not $DTLogUser) (setq $DTLogUser ""))
 	   
 	; extraction de la première définition de bloc contenue dans le dessin
 	(setq bl (tblnext "BLOCK" T))
@@ -247,9 +227,7 @@
 	;
 	; pour trouver les images externes et changer les chemins : prendre toutes les entités de type "IMAGE", 
 	; et modifier le chemin stocké (code 1 dans le sous code 340)
-	  
-	(if (not $DTLogUser) (setq $DTLogUser ""))
-	
+	   
 	; sélection des images
 	(setq ssim (ssget "X" (list '(0 . "IMAGE"))))
 	(if ssim (setq nbim (sslength ssim)) (setq nbim 0))
@@ -299,61 +277,10 @@
 (defun F_DTcoriref()
 	
 	;Supression des images
-	(if (not $DTLogUser) (setq $DTLogUser ""))
 	(command "_-image" "_d" "*")
 	(setq $DTLogUser (strcat $DTLogUser "\nDTcoriref : suppression des images attachées")); message utilisateur
 
 )
-
-; DTblkmaj : Mise à jour des blocs depuis un répertoire donné (chemin)
- ;********************************************************************
- (defun C:DTupblk( / ch)
-	; pour que le programme puisse être annulé comme une seule commande
-	(setvar "CMDECHO" 0)
-	(command "_UNDO" "_BE")
-	
-	;RAZ des messages utilsateurs
-	(setq $DTLogUser "")
-	
-	;Récupération du chemin des blocs
-	(setq ch (getstring "Chemin d'accès au répertoire contenant les blocs ? "))
-	
-	(F_DTupblk ch)
-	
-	; pour que le programme puisse être annuél comme une seule commande
-	(command "_UNDO" "_E")
-	(setvar "CMDECHO" 1)
-	
-	;Affichage des messages utilsateurs
-	(princ $DTLogUser)
-	(princ)
- )
-(defun F_DTupblk(chemin / lsb b bname attreq)
-	
-	(if (not $DTLogUser) (setq $DTLogUser ""))
-	(setq attreq (getvar "ATTREQ"))
-	(setvar "ATTREQ" 0)
-	(setq lsb (DTLsBlk)); liste des noms de blocs du dessin
-	(foreach b lsb
-		(setq bname (strcat (DTgetpath (getvar "DWGPREFIX") chemin) "\\" b ".dwg")); nom du fichier bloc à recharger (get path permet de traiter que ce soit un chemin absolu ou relatif)
-		(if (findfile bname) (progn ; le bloc n'est rechargé que si il est effectivement trouvé
-			(command "_.-INSERT" (strcat b "=" bname) "_S" 1 "_R" 0 "_NONE" '(0 0))
-						(entdel (entlast))
-			(command "_ATTSYNC" "N" b)
-			(setq $DTLogUser (strcat $DTLogUser "\nF_DTupblk : rechargement du bloc " b)); message utilisateur
-		)
-			(setq $DTLogUser (strcat $DTLogUser "\nF_DTupblk : bloc non rechargé " b)); message utilisateur
-		)
-	)
-	(setvar "ATTREQ" attreq)
-	(princ)
-)
-
-; F_DTattval : modification de la valeur des attributs de blocs
- ;********************************************************************
-; (defun F_DTattval( nombloc etiquatt newval / Aucad CadDoc BlkDefObj
-				; )
-
-(prompt "\n DocTekus chargement DTcor v0.1d - licence GNU GPL v3")
+(prompt "\n DocTekus chargement DTcor v0.1b - licence GNU GPL v3")
 (princ)
 ;Clean chargement

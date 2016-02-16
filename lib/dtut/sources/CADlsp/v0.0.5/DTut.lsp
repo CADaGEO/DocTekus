@@ -26,9 +26,6 @@
 ;;
 ;;CHANGELOG **********************************************************
 ;;********************************************************************
-;;Version 0.0.6 du 30/12/2014
-;;- ajout fonction DTLsBlk
-;;
 ;;Version 0.0.5 du 03/12/2014
 ;;- ajout fonctions DTLsBlkUsed et DTgetpath
 ;;
@@ -254,7 +251,6 @@
   )
   
 ;; DTLsBlkUsed -> monte une liste des noms de blocs présents et utilisés dans la base de donnée dessin (hors Xréfs)
-;;					Attention, ne tient pas compte des blocs imbriqués (non sélectionnés)
 (defun DTLsBlkUsed (/ e1 ne1 r1 l1)
   (setq l1 '())
   (setq e1 (entnext))
@@ -266,7 +262,6 @@
 					
 		(if (not (assoc 1 r1)) (progn ; pas une référence externe : car pas de lien vers fichier externe (code 1)
 			;; CAS des blocs dynamiques à revoir : ne fonctionne pas pour l'instant (passer par l'API pour récupérer le vrai nom du bloc ???)
-			;; Voir exemple Jav.lsp dans Barbatatou
 			; (setq r1 (tblnext "BLOCK")); on récupère la "vrai" définition du bloc pour trouver son "vrai" nom
 			; (setq ne1 (cdr (assoc 2 r1)))
 			; (if (not (member ne1 l1)) (setq l1 (cons ne1 l1))) ; on ajoute le vrai nom du bloc à la liste s'il n'existe pas déjà
@@ -279,35 +274,30 @@
 )
 
 ;; DTLsBlk -> monte une liste des noms de blocs définis dans la base de donnée dessin mais pas forcément utilisés (hors Xréfs)
-;,; morceau de code repris depuis Barbatatou WBLOCKM.lsp
-(defun DTLsBlk (/ lst itm nam pass ctr chk)
-
- (setq lst nil)
-      (setq itm (tblnext "BLOCK" T))
-      (while (/= itm nil)
-        (setq nam (cdr (assoc 2 itm)))
-        (setq pass T)
-        (if (/= (cdr (assoc 1 itm)) nil)
-          (setq pass nil)
-          (progn
-            (setq ctr 1)
-            (repeat (strlen nam)
-              (setq chk (substr nam ctr 1))
-              (if (or (= chk "*")(= chk "|"))
-                (setq pass nil)
-              )
-              (setq ctr (1+ ctr))
-            )
-          )
-        )
-        (if (= pass T)
-          (setq lst (cons nam lst))
-        )
-        (setq itm (tblnext "BLOCK"))
-      )
-      (setq lst (acad_strlsort lst))
+(defun DTLsBlk (/ e1 ne1 r1 l1)
+  ; (setq l1 '())
+  ; (setq e1 (next))
+  ; (while e1 ; le dessin n'est pas vide traitement des objets
+      ; (if (= (cdr (assoc 0 (entget e1))) "INSERT") (progn ; c'est un bloc ou Xréf
 	  
-  (DTReturn lst)
+			; (setq ne1 (cdr (assoc 2 (entget e1)))) ; on récupère le nom du bloc (code 2)
+			; (if (not (assoc 102 (entget e1))) ; c'est un bloc "simple" (non dynamique) : le nom du bloc correspond à son "vrai" nom
+				; (if (not (member ne1 l1)) (setq l1 (cons ne1 l1))) ; on ajoute le nom du bloc à la liste s'il n'existe pas déjà
+				
+				; (progn ; on a un code 102 dans la description de l'objet : c'est une Xréf ou un bloc dyn (attention objets type OLE non traités)
+					; (setq r1 (tblsearch "BLOCK" ne1 T)); l'option T permet de se positionner dans la table pour que ensuite tblnext fonctionne
+					; (if (not (assoc 1 r1)) (progn ; pas une référence externe : car pas de lien vers fichier externe (code 1) - par déduction il s'agit d'un bloc dynamique
+						; CAS des blocs dynamiques à revoir : ne fonctionne pas pour l'instant (passer par l'API pour récupérer le vrai nom du bloc ???)
+						(setq r1 (tblnext "BLOCK")); on récupère la "vrai" définition du bloc pour trouver son "vrai" nom
+						(setq ne1 (cdr (assoc 2 r1)))
+						(if (not (member ne1 l1)) (setq l1 (cons ne1 l1))) ; on ajoute le vrai nom du bloc à la liste s'il n'existe pas déjà
+					; ))
+				; )
+			; )
+	  ; ))
+	  ; (setq e1 (entnext e1)) ; passage à l'objet suivant
+  ; )
+  (DTReturn l1)
 )
 
 
@@ -464,5 +454,5 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-   (prompt "\nDocTekus chargement DTut v0.0.6 - licence GNU GPL v3")
+   (prompt "\nDocTekus chargement DTut v0.0.5 - licence GNU GPL v3")
   (princ)
