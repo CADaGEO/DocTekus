@@ -26,7 +26,7 @@ Début 2016, DocTekUs contient principalement des outils pour AutoCAD :
 * changelog.txt : historique des modifications
 * \doc\ : schéma d'architecture, description des focntionnalités actuellement disponibles, charte de développement
 * \[BoiteOutils]\ [Outil]\sources\ [Plateforme]\ : fichiers sources des différents outils, répartis selon les cas par boîtes à outils, outils et plateforme de développement
-* \[BoiteOutils]\ [Outil]\packages\ : lorsqu'ils sont disponibles, fichiers archives contenant des packages pour diffusion (nommés [outil]'_'[version]'_'[plateforme].zip)
+* \[BoiteOutils]\ [Outil]\packages\ : lorsqu'ils sont disponibles, fichiers archives contenant des packages pour diffusion (nommés [outil] _ [version] _ [plateforme].zip)
 * \ packages \ : contient un package standard regroupant les principaux outils
 
 ### Support or Contact
